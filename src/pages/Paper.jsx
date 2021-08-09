@@ -8,16 +8,9 @@ const CallforPaper = () => {
     );
 }
 
-const PaperGuidelines = () => {
-    return(
-        <>
-            Paper Submission Guidelines
-        </>
-    );
-}
+
 
 
 
 
 export default CallforPaper;
-export {PaperGuidelines};

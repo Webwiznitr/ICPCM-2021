@@ -8,16 +8,8 @@ const NewRegistration = () => {
     );
 };
 
-const UserLogin = () => {
-    return(
-        <>
-            User Login
-        </>
-    );
-};
 
 
 
 
 export default NewRegistration;
-export {UserLogin};

@@ -1,12 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Main from './pages/main';
-import {AboutInsti, AboutDepart} from './pages/About';
-import CallforPaper, {PaperGuidelines} from './pages/Paper';
-import NewRegistration, {UserLogin} from './pages/Registration';
+import AboutInsti from './pages/AboutInsti';
+import AboutDepart from './pages/AboutDepart';
+import CallforPaper from './pages/Paper';
+import PaperGuidelines from './pages/PaperGuidelines';
+import NewRegistration from './pages/Registration';
+import UserLogin from './pages/UserLogin';
 import Sponsorship from './pages/Sponsorship';
 import Navbar from './Navbar';
-import InterCommitee, {NatCommitee, IntrnalCommitee} from './pages/Commitee';
+import InterCommitee from './pages/Commitee';
+import NatCommitee from './pages/NatCommitee';
+import IntrnalCommitee from './pages/InternlCommitee';
 import NotFound from './pages/Notfound';
 
 // IMPORTANT POINTS 
