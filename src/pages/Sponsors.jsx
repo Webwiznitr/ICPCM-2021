@@ -1,5 +1,7 @@
 import React from 'react'
 
+//Carousal of confirmed sponsors
+
 const Sponsors = () => {
     return (
         <>
