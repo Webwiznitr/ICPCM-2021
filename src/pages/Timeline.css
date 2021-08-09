@@ -42,18 +42,10 @@ p .text{
 
 .timeline-date{
     text-align: left;
-    /* display: flex;
-    flex-direction: column;
-    padding: 1rem 1rem 1rem 5rem;
-    white-space: nowrap; */
 }
 
 .timeline-text{
     padding-left: 2rem;
-    /* display: flex;
-    justify-content: space-between;
-    text-align: left;
-    overflow: hidden; */
 }
 
 span{
@@ -75,12 +67,6 @@ font-weight: 500;
 font-size: 36px;
 }
 
-/* .box{
-    width: 500px;
-    height: 500px;
-    color: black;
-    z-index: 99;
-} */
 
 
 
