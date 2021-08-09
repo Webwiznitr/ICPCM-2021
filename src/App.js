@@ -1,25 +1,43 @@
-import React from 'react'; 
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Main from './pages/main';
+import NotFound from './pages/Notfound';
+
+// IMPORTANT POINTS 
+
+// ADD HEADER COMPONENT IN FUNCTION APP() 
+// ADD FOOTER COMPONENT IN FUNCTION APP() 
+
+//ALL OHTER SECTIONS/ COMPONENTS IN Main component in "./pages/main.jsx" 
+// Reusable components in COMPONENT folder 
+// All pages in PAGES folder 
+
 
 function App() {
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
 
-    <div> Start </div>
+    // adding router to catch error if main not found 
+    <Router>
+
+      <div className="App">
+
+        {/* HEADER */}
+
+        {/* MAIN COMPONENT IF NOT FOUND 404 ERROR*/}
+        <main className="main-component">
+          <Switch>
+            <Route path="/" exact component = {Main} />
+            <Route component = {NotFound} />
+
+          </Switch>
+        </main>
+
+
+        {/* FOOTER */}
+
+      </div>
+
+    </Router>
   );
 }
 
