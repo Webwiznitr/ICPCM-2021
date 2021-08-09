@@ -10,21 +10,7 @@ const About = () => {
     );
 }
 
-const AboutInsti = () => {
-    return(
-        <>
-            About Institue
-        </>
-    );
-}
 
-const AboutDepart = () => {
-    return(
-        <>
-            About Department
-        </>
-    );
-}
+
 
 export default About;
-export {AboutInsti, AboutDepart}

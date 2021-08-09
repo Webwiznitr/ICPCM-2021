@@ -8,4 +8,6 @@ const AboutDepart = () => {
     );
 }
 
+
+
 export default AboutDepart;

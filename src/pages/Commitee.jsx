@@ -7,20 +7,7 @@ const InterCommitee = () => {
         </>
     );
 }
-const NatCommitee = () => {
-    return(
-        <>
-            National Commitee
-        </>
-    );
-}
-const IntrnalCommitee = () => {
-    return(
-        <>
-            Internal Commitee
-        </>
-    );
-}
+
+
 
 export default InterCommitee;
-export {NatCommitee, IntrnalCommitee};
