@@ -5,8 +5,8 @@ import Styled from 'styled-components';
 import Mehta from '../assets/mehta.png'; 
 
 
-import { GlimpseImages } from "../components/glimpseImages";
-import { RequireObjectCoercible } from "es-abstract";
+// import { GlimpseImages } from "../components/glimpseImages";
+// import { RequireObjectCoercible } from "es-abstract";
 
 const GlimpseContainer = Styled.div`
     width: 80vw; 
