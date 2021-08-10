@@ -41,7 +41,6 @@ function App() {
             <Route path="/" exact component = {Main} />
             <Route path="/aboutinstitute" exact component = {AboutInsti} />
             <Route path="/aboutdepartment" exact component = {AboutDepart} />
-            <Route path="/aboutdepartment" exact component = {AboutDepart} />
             <Route path="/callforpaper" exact component = {CallforPaper} />
             <Route path="/paperguidelines" exact component = {PaperGuidelines} />
             <Route path="/newregistration" exact component = {NewRegistration} />
