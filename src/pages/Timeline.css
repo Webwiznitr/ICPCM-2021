@@ -13,6 +13,7 @@
   margin-top: 5rem;
   padding-right: 4rem;
   padding-left: 4rem;
+  margin-bottom: 3rem;
   position: center;
   justify-content: center;
   overflow: hidden;
@@ -54,7 +55,7 @@
   height: 100px;
   background: #CACDE5;
   height: fit-content;
-  display: block;
+  /* display: block; */
     
 }
 
@@ -64,6 +65,7 @@
   display: flex;
   flex-direction: row;
   width: auto;
+  overflow: hidden;
 }
 
 .tdate{
@@ -71,7 +73,10 @@ font-family: sans-serif;
 font-style: normal;
 font-weight: 500;
 font-size: 36px;
-width: fit-content;
+width: 30%;
+/* width: fit-content; */
+justify-content: center;
+/* text-align: center; */
 }
 
 .ttext{
@@ -79,8 +84,10 @@ font-family: sans-serif;
 font-style: normal;
 font-weight: 500;
 font-size: 36px;
-width: fit-content;
-text-align: left;
+/* width: fit-content; */
+width: 70%;
+justify-content: center;
+/* text-align: left; */
 padding-left: 5rem;
 }
 
@@ -95,10 +102,6 @@ padding-left: 5rem;
       font-size: 30px;
       padding-left: 5rem;
       }
-
-    .card{
-      width: 85vw;
-    }
     
 }
 
@@ -113,10 +116,6 @@ padding-left: 5rem;
       font-size: 27px;
       padding-left: 4rem;
       }
-
-    .card{
-      width: 80vw;
-    }
 }
 
 @media (max-width: 920px){
@@ -154,6 +153,68 @@ padding-left: 5rem;
       line-height: 84px;
      
     } 
+}
+
+@media (max-width: 600px){
+  .timeline-date-text{
+    text-align: left;
+    padding-left: 0rem;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    overflow: hidden;
+  }
+
+  .ttext{
+    font-weight: 500;
+    font-size: 21px;
+    padding-left: 1rem;
+    }
+
+    .tcards{
+      position: relative;
+      justify-content: center;
+      width: 100vw;
+    }
+
+    .tcard{
+      width: 100vw;
+      border-radius: 15px;
+      padding: 2rem 2rem 2rem 2rem;
+      margin: 2rem 0px 2rem 0px;
+      filter: drop-shadow(4px 8px 10px #949ACB);
+      height: 100px;
+      background: #CACDE5;
+      height: fit-content;
+      /* display: block; */
+        
+    }
+
+    .schedule{
+      position: relative;
+      justify-content: center;
+      width: 100vw;
+      height: fit-content;
+      padding: 0px 0rem 0px 0rem; 
+    }
+
+    .timeline {
+      /*width: 100vw;*/
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      /* margin-top: 15rem; */
+      padding-top: 1.5rem;
+      margin-top: 1.5rem;
+      padding-right: 0rem;
+      padding-left: 0rem;
+      margin-bottom: 1.5rem;
+      position: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    
 }
 
 
