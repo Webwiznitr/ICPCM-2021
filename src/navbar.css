@@ -1,0 +1,46 @@
+
+.dropdown{
+    display: none;
+}
+.navbarComponent{
+    position: relative;
+    left: -5px;
+}
+.dropdown li{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar:hover .dropdown{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.horizontal-list{
+    list-style:none;
+    padding-left: 0px;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.horizontal-list li{
+    display: inline-block;
+    margin: 8px ;
+}
+.nav-menu li a{
+    color: black;
+    text-decoration: none ;
+}
+
+.nav-menu li a:hover{
+    color: #949ACB;
+    /* border-bottom: 1px solid black; */
+}
+.text-center{
+    text-align: center;
+}
+.navbarsubcomp{
+    text-align: start;
+    margin: 0.1rem;
+}
