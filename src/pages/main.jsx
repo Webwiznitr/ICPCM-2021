@@ -11,7 +11,7 @@ import Contact from './Contact';
 const Main = () => {
     return(
         <section> 
-            main is working 
+            
             <About/>
             <Timeline/>
             <Speakers/>
