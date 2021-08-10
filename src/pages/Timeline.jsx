@@ -1,8 +1,23 @@
 import React from 'react';
 
 import './Timeline.css';
+import TimelineData from './TimelineData';
+
+const Card = (props) =>{
+
+    return(
+    <div className="tcard">
+        <div className="timeline-date-text" >
+            <div className="tdate" > {props.tdate} </div>
+            <div className="ttext"> {props.tevent}</div>
+        </div>
+    </div>
+    );
+};
 
 const Timeline = () => {
+
+    
     return(
         <>
         <section className="timeline">
@@ -12,30 +27,18 @@ const Timeline = () => {
 
             <div className="schedule"> 
 
-                <div className="cards" >
-                    <div className="card">
-                        <div className="timeline-date" >
-                        <p className="date" > 10th October 2021 <span>Abstract submission deadline</span></p> 
-                        </div>
-                    </div>
-                    
-                    <div className="card">
-                        <div className="timeline-date">
-                        <p className="date" > 30th October 2021 <span>Notification of acceptance/rejection</span> </p>
-                        </div>
-                    </div>
+                <div className="tcards" >
+                   {
+                       TimelineData.map(function ncards(val){
+                           return(
+                               <Card
+                                    tdate={val.tdate}
+                                    tevent={val.tevent}
+                                />
 
-                    <div className="card">
-                        <div className="timeline-date">
-                        <p className="date" > 15th November 2021 <span>Final paper submission deadline</span> </p>
-                        </div>
-                    </div>
-
-                    <div className="card">
-                        <div className="timeline-date">
-                        <p className="date" > 30th October 2021 <span>Abstract submission deadline</span> </p>
-                        </div>  
-                    </div>
+                           );
+                       })
+                   }
                 </div>
 
             </div>
