@@ -18,8 +18,9 @@ const Main = () => {
             
             <About/>
             <Timeline/>
+            <a href="https:google.com.">learn react</a>
             <Speakers/>
-
+             
             <Sponsors/>
             <Glimpse/>
 
@@ -30,7 +31,7 @@ const Main = () => {
                 <Contact/>
             </footer> */}
         </section>
-    )
-}; 
+        
+)}; 
 
 export default Main; 
