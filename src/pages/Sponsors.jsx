@@ -18,7 +18,9 @@ const SponsorImageStyle = {
 const Sponsors = () => {
     return (
       <Item className = "sponsors-carousel" >
-      <Slider  className = "carousel-initialised" style = { { margin: "10px", padding: " 10px"}} autoplay = {true}  slidesToShow = {3} arrows = { false} dots>
+        
+        <div className="zx" style={{textAlign:"center",fontSize:"3rem",fontWeight:"500" }}>Sponsors </div>
+      <Slider  className = "carousel-initialised" style = { { margin: "10px", padding: " 10px"}} autoplay = {true}  slidesToShow = {3} arrows = { true} autoSpeed = { 10 } dots>
       
       <img src= {SponsorImage} alt= " not found" style = { SponsorImageStyle} />
       <img src= {SponsorImage} alt= "not found" style = { SponsorImageStyle} />
@@ -28,9 +30,10 @@ const Sponsors = () => {
       <img src= {SponsorImage} alt= " not found" style = { SponsorImageStyle} />
       <img src= {SponsorImage} alt= " not found" style = { SponsorImageStyle} />
       <img src= {SponsorImage} alt= "  not found" style = { SponsorImageStyle} />
-
+      
 
     </Slider>
+    
     </Item>
 
     );
