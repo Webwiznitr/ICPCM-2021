@@ -31,12 +31,31 @@
 .nav-menu li a{
     color: black;
     text-decoration: none ;
+    position: relative;
 }
 
 .nav-menu li a:hover{
-    color: #949ACB;
+    color: #ffffff;
     /* border-bottom: 1px solid black; */
 }
+.nav-menu li a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0%;
+    z-index: -1;
+    width: 0%;
+    height: 100%;
+    background-color: #949ACB;
+    transition: all 0.5s linear;
+    border-radius: 2px;
+}
+
+.nav-menu li a:hover::before{
+    width: 100%;
+    background-color: #3C4270;
+}
+
 .text-center{
     text-align: center;
 }
