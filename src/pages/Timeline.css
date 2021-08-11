@@ -57,9 +57,7 @@
   filter: drop-shadow(4px 8px 10px #949ACB);
   height: 100px;
   background: #CACDE5;
-  height: fit-content;
-  /* display: block; */
-    
+  height: fit-content;   
 }
 
 .timeline-date-text{
@@ -80,8 +78,6 @@ width: 25%;
 margin: auto;
 /* width: fit-content; */
 justify-content: center;
-/* text-align: center; */
-/* padding-right: 0.2rem; */
 }
 
 .ttext{
