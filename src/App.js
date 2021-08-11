@@ -29,11 +29,11 @@ function App() {
     <>
     {/* // adding router to catch error if main not found  */}
     <Router>
-    <Navbar/>
+   
 
       <div className="App">
 
-        {/* HEADER */}
+        {/* HEADER */}  <Navbar/>
 
         {/* MAIN COMPONENT IF NOT FOUND 404 ERROR*/}
         <main className="main-component">

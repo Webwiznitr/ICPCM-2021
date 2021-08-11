@@ -90,7 +90,7 @@ let menuOpen=false;
             console.log('nkfe');
             menuOpen = true;
         } else {
-            menuBtn.className = 'menu_btn';
+            menuBtn.className = 'o';
             menuOpen = false;
         }
     }, false );
