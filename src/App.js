@@ -8,7 +8,7 @@ import PaperGuidelines from './pages/PaperGuidelines';
 import NewRegistration from './pages/Registration';
 import UserLogin from './pages/UserLogin';
 import Sponsorship from './pages/Sponsorship';
-import Navbar from './Navbar';
+import Navbar from './pages/Navbar';
 import InterCommitee from './pages/Commitee';
 import NatCommitee from './pages/NatCommitee';
 import IntrnalCommitee from './pages/InternlCommitee';
