@@ -62,4 +62,5 @@
 .navbarsubcomp{
     text-align: start;
     margin: 0.1rem;
+    width: fit-content;
 }
