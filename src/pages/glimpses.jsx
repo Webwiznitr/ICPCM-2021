@@ -11,6 +11,10 @@ import Mehta from '../assets/mehta.png';
 const GlimpseContainer = Styled.div`
     width: 80vw; 
     margin : auto ; 
+    background-color: #949ACB;
+    padding-top: 10px;
+    border-radius: 2px 5px;
+    padding-bottom: 10px;
 
 `;
 
