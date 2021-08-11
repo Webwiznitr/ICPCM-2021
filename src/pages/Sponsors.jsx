@@ -18,16 +18,16 @@ const SponsorImageStyle = {
 const Sponsors = () => {
     return (
       <Item className = "sponsors-carousel" >
-      <Slider shift = { 10} className = "carousel-initialised" style = { { margin: "10px", padding: " 10px"}} autoplay = {true}  slidesToShow = {3} arrows = { false} dots>
+      <Slider  className = "carousel-initialised" style = { { margin: "10px", padding: " 10px"}} autoplay = {true}  slidesToShow = {3} arrows = { false} dots>
       
-      <img src= {SponsorImage} alt= " Image not found" style = { SponsorImageStyle} />
-      <img src= {SponsorImage} alt= " Image not found" style = { SponsorImageStyle} />
-      <img src= {SponsorImage} alt= " Image not found" style = { SponsorImageStyle} />
-      <img src= {SponsorImage} alt= " Image not found" style = { SponsorImageStyle} />
-      <img src= {SponsorImage} alt= " Image not found" style = { SponsorImageStyle} />
-      <img src= {SponsorImage} alt= " Image not found" style = { SponsorImageStyle} />
-      <img src= {SponsorImage} alt= " Image not found" style = { SponsorImageStyle} />
-      <img src= {SponsorImage} alt= " Image not found" style = { SponsorImageStyle} />
+      <img src= {SponsorImage} alt= "not found" style = { SponsorImageStyle} />
+      <img src= {SponsorImage} alt= "not found" style = { SponsorImageStyle} />
+      <img src= {SponsorImage} alt= "not found" style = { SponsorImageStyle} />
+      <img src= {SponsorImage} alt= "not found" style = { SponsorImageStyle} />
+      <img src= {SponsorImage} alt= "not found" style = { SponsorImageStyle} />
+      <img src= {SponsorImage} alt= "not found" style = { SponsorImageStyle} />
+      <img src= {SponsorImage} alt= "not found" style = { SponsorImageStyle} />
+      <img src= {SponsorImage} alt= "not found" style = { SponsorImageStyle} />
 
 
     </Slider>
