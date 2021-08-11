@@ -1,13 +1,18 @@
 import React from 'react';
-
+import './about.css';
+import Conference_Img from '../About_Images/pic2.jpg';
 const About = () => {
     return(
         <>
             <section id="about" >
             <div className="container">
-      <div className="card mt-4">
-        <h1>About the Conference</h1>
-        <div className="content">
+      <div className="card" >
+        <div class="bg" id="bg_Header"><h1>ABOUT THE CONFERENCE</h1>
+          </div>
+        <div class="bg" id="bg_Img">
+          <img src={Conference_Img} alt="About conference" />
+        </div>
+        <div className="bg" id="bg_Content">
           <p>
             The Department of Metallurgical and Materials Engineering, National
             Institute of Technology Rourkela is going to organize the 3rd
