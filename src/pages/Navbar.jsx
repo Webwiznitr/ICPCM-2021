@@ -2,7 +2,10 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 import './navbar.css'
 
+
 const Navbar = () => {
+
+    
     return (
         <>
             <ul class="horizontal-list text-center nav-menu">
@@ -62,10 +65,39 @@ const Navbar = () => {
 
                 </li>
             </ul>
-
+            <div className='menu-btn'> 
+                <div className='menu-btn_burger'></div>
+            </div>
         </>
     );
 };
+
+
+const menuBtn = document.querySelector('.menu_btn');
+let menuOpen=false;
+
+
+ if(menuBtn) {
+
+    console.log("harbu not found")
+    
+
+    menuBtn.addEventListener('onClick', () => {
+
+        if(!menuOpen){
+            menuBtn.className = "open";
+            
+            console.log('nkfe');
+            menuOpen = true;
+        } else {
+            menuBtn.className = 'menu_btn';
+            menuOpen = false;
+        }
+    }, false );
+    
+
+}
+
 
 export default Navbar;
 
