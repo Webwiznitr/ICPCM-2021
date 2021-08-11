@@ -37,7 +37,7 @@ const Navbar = () => {
                     }}> 
                      <NavLink className="navbarComponent" to='/'>
                <li>
-                    <a className='navbar'>
+                    <a className='navbar' href="#">
                     Home
                     
                     </a>
