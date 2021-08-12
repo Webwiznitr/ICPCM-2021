@@ -18,11 +18,12 @@ const Main = () => {
         <section> 
             
             <About/>
+            <Sponsors/>
             <Timeline/>
-            <a href="https:google.com.">learn react</a>
+            
             <Speakers/>
              
-            <Sponsors/>
+            
             <Glimpse/>
 
             <Downloads/>
