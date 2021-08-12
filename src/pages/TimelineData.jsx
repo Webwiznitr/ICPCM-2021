@@ -5,7 +5,7 @@ const TimelineData = [
     },
     {
         tdate: "30th October 2021",
-        tevent: "Notification of acceptance/rejection"
+        tevent: "Notification of acceptance / rejection"
     },
     {
         tdate: "15th November 2021 ",

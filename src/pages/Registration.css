@@ -1,0 +1,19 @@
+.Parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 2px;
+  margin: 2px;
+}
+
+#Parent1 {
+  padding: 2px;
+  margin: 2px auto;
+  width: 50%;
+}
+
+#Parent2 {
+  padding: 2px;
+  margin: 2px;
+}
