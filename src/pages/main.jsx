@@ -10,7 +10,7 @@ import Downloads from './Downloads';
 
 import Footer from './Footer';
 import '../components/glimpses.scss'; 
-=======
+
 
 
 
