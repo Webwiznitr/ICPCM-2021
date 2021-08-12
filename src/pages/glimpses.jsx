@@ -65,7 +65,7 @@ function Glimpse() {
 
      
 
-        <Slider autoplaySpeed = { 1500 } dots autoplay = {true}  adaptiveHeight = {true} slidesToShow = {3}  arrows = { true}>
+        <Slider autoplaySpeed = { 1500 }  autoplay = {true}  adaptiveHeight = {true} slidesToShow = {3}  arrows = { true}>
             <img src = { Mehta} alt="img not found" />
             <img src = { Mehta} alt="img not found" />
             <img src = { Mehta} alt="img not found" />

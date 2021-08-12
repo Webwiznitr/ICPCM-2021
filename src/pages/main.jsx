@@ -7,6 +7,7 @@ import Sponsors from './Sponsors';
 
 import Glimpse from './glimpses';
 import Downloads from './Downloads';
+import Banner from '../components/Banner';
 
 //import '../components/glimpses.scss'; 
 //import Contact from './Contact';
@@ -16,7 +17,7 @@ import Downloads from './Downloads';
 const Main = () => {
     return(
         <section> 
-            
+            <Banner/>
             <About/>
             <Sponsors/>
             <Timeline/>

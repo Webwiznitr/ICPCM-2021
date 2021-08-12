@@ -1,12 +1,15 @@
 import React from 'react'
+import BannerSmall from "../components/BannerSmall"
 
 const AboutInsti = () => {
     return(
-        <>
-            <div className="container">
-      <div className="card mt-4">
-        <h1>About the institute</h1>
-        <div className="content">
+        <div>
+        <BannerSmall/>
+
+            <div className = " about_section_container_insti_dept">
+      <div>
+        <h1 className= "about_the_insti_dept_heading">About the institute</h1>
+        <div className="about_dept_inti_content">
           <p>
             National Institute of Technology Rourkela (NIT Rourkela), formerly
             known as Regional Engineering College Rourkela (REC Rourkela) is an
@@ -44,7 +47,7 @@ const AboutInsti = () => {
         </div>
       </div>
     </div>
-        </>
+        </div>
     );
 }
 
