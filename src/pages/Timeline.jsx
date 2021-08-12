@@ -6,7 +6,7 @@ import TimelineData from './TimelineData';
 const Card = (props) =>{
 
     return(
-    <div className="tcard">
+    <div className="tcard" >
         <div className="timeline-date-text" >
             <div className="tdate" > {props.tdate} </div>
             <div className="ttext"> {props.tevent}</div>
@@ -20,7 +20,7 @@ const Timeline = () => {
     
     return(
         <>
-        <section className="timeline">
+        <section className="timeline" id="timeLine">
             <div>
             <h1 className="theading" >Important Dates </h1>
             </div>
