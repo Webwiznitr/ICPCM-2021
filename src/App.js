@@ -31,7 +31,7 @@ function App() {
     <Router>
    
 
-      <div className="App">
+      <div className="App" >
 
         {/* HEADER */}  <Navbar/>
 

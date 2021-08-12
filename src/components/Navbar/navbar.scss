@@ -1,0 +1,92 @@
+
+
+.hamburger {
+    position: absolute;
+    right: 10px; 
+    top: 8px; 
+}
+
+
+.topnav {
+    display: flex;
+    box-sizing: border-box;
+    padding-top: 10px;
+    overflow: hidden;
+
+
+    a {
+        text-decoration: none;
+        margin: 0 10px;
+        color: white;
+    }
+
+
+    .dropdown-content{
+        display: none;
+    }
+}
+
+
+.dropdown:hover {
+    .dropdown-content{
+        display: block;
+        position: absolute;
+        background-color: #CACDE5;
+    }
+
+    .navbarsubcomp {
+        display: block;
+        margin-top: 10px; 
+        // background-color: red;
+    }
+}
+
+
+.navbarsubcomp:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+
+
+
+@media  screen and (max-width: 900px) {
+    
+    .topnav {
+        flex-direction: column;
+        margin-right: 10%;
+
+        a , .dropdown{
+            margin: 10px 0 ; 
+        }
+
+       
+    }
+
+   
+
+    
+
+    .dropbtn{
+        // display: flex;
+        // flex-direction: column;
+    }
+
+    .dropdown:hover {
+        
+        .dropdown
+        {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .dropdown-content{
+
+        display: block;
+        //position: relative;
+
+
+    }
+}
+}

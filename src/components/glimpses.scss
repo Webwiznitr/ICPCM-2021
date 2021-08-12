@@ -3,7 +3,28 @@
 
     img {
         border-radius: 10px;
-        max-width: 500px;
-        max-height: 500px;
+        max-width: 400px;
+        max-height: 400px;
     }
+}
+
+
+button.carousel-arrow.block.carousel-prev::before{
+    background-color: white;
+    border-radius: 50%;
+    opacity: 1;
+     margin-right: 10px;
+    // box-shadow: 5px 10px #888888 ;
+    height: 30px;
+    width: 30px;
+}
+
+button.carousel-arrow.block.carousel-next::before{
+    background-color: white;
+    border-radius: 50%;
+    opacity: 1;
+     margin-right: 10px;
+    // box-shadow: 5px 10px #888888 ;
+    height: 30px;
+    width: 30px;
 }
