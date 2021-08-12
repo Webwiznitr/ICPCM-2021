@@ -9,7 +9,7 @@ function Footer() {
           <div className="container">
             <div className="row">
               {/*column1*/}
-              <div className="col1">
+              <div className="col1 column">
                 <i class="fa fa-map-marker"></i>
                 <p className="markicon">📌</p>
                 <div className="Address">
@@ -23,7 +23,7 @@ function Footer() {
 
               {/*column2*/}
 
-              <div className="col2">
+              <div className="col2 column">
                 <p className="phoneicon">☎️</p>
                 <div className=" number">
                   <h4>Phone Number</h4>
@@ -35,7 +35,7 @@ function Footer() {
 
               {/*column3*/}
 
-              <div className="col3">
+              <div className="col3 column">
                 <div className="mail">
                   <p className="mailicon">📫</p>
                   <div className="mailcon">
@@ -49,7 +49,7 @@ function Footer() {
               </div>
             </div>
 
-            <svg viewBox="0 0 120 20">
+            {/* <svg style={{display:'absolute', fontBottom:'0'}} viewBox="0 0 120 20">
               <defs>
                 <filter id="goo">
                   <feGaussianBlur
@@ -79,15 +79,16 @@ function Footer() {
               <use id="wave3" class="wave" href="#wave" x="0" y="-7"></use>
               <use id="wave2" class="wave" href="#wave" x="0" y="-5"></use>
               <use id="wave1" class="wave" href="#wave" x="0" y="0"></use>
-            </svg>
+            </svg> */}
 
             <div className="footer-bottom">
               <p className="text-xs-center">
                 ICPCM &copy;{new Date().getFullYear()} - All Rights Reserved
               </p>
-              <p className="end">
-                Designed and Developed by Team WEBWIZ with ❤️
-              </p>
+           
+                <p className="end">
+                  Designed and Developed by Team WEBWIZ with ❤️
+                </p>
             </div>
           </div>
         </div>

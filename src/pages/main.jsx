@@ -7,11 +7,19 @@ import Sponsors from './Sponsors';
 
 import Glimpse from './glimpses';
 import Downloads from './Downloads';
+// import LandingPagePoster from '../LandingPageAssets/landingPagePoster.png'
+// import Styled from "styled-components";
 
 //import '../components/glimpses.scss'; 
 //import Contact from './Contact';
 //main body of the website 
 
+// const LandingPoster = Styled.div`
+//     width: 100%;
+//     margin: 0px;
+//     height: 85vh;
+//     margin-bottom: 5rem;
+// `;
 
 const Main = () => {
     return(
@@ -19,7 +27,7 @@ const Main = () => {
             
             <About/>
             <Timeline/>
-            <a href="https:google.com.">learn react</a>
+            
             <Speakers/>
              
             <Sponsors/>
