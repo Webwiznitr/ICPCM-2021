@@ -12,10 +12,9 @@ import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import "./Registration.css";
-
 const UserLogin = ({ handleChange }) => {
   const gridStyle = {
-    padding: 155,
+    padding: 50,
   };
   const paperStyle = {
     padding: 15,
@@ -28,6 +27,7 @@ const UserLogin = ({ handleChange }) => {
   const btnstyle = { margin: "8px 0" };
   const marginTop = { marginTop: "2%" };
   return (
+    <>
     <Grid style={gridStyle} item xs zeroMinWidth>
       <Paper style={paperStyle}>
         <Grid align="center">
@@ -70,6 +70,7 @@ const UserLogin = ({ handleChange }) => {
         </Typography>
       </Paper>
     </Grid>
+    </>
   );
 };
 

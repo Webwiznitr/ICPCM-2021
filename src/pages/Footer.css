@@ -7,19 +7,22 @@
 .container {
   padding-bottom: 2rem;
   padding-top: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .row {
   width: 100%;
-  height: 20vh;
+  height: fit-content;
   display: flex;
-
+  justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 0 auto;
 }
 
 .col1 {
-  margin-left: 10rem;
+  /* margin-left: 10rem; */
   width: 15rem;
   box-sizing: border-box;
   background-color: #cacde5;
@@ -38,7 +41,7 @@ p.markicon {
 
 .col2 {
   color: white;
-  margin-left: 15rem;
+  /* margin-left: 15rem; */
   width: 15rem;
   background-color: #b2b7dd;
   border-radius: 5%;
@@ -57,7 +60,7 @@ p.phoneicon {
 }
 
 .col3 {
-  margin-left: 15rem;
+  /* margin-left: 15rem; */
   width: 15rem;
   box-sizing: border-box;
   background-color: #cacde5;
@@ -87,7 +90,21 @@ p.mailicon {
   justify-content: center;
   width: 100%;
 }
-
+.footer-bottom{
+  display: absolute;
+  bottom: 0;
+  margin: 20px;
+  background-color: #b2b7dd;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0px;
+  margin-left: -10px;
+  margin-right: -10px;
+  overflow-y:visible;
+}
+.footer-bottom p{
+  padding: 10px;
+}
 .end {
   display: flex;
   justify-content: center;
@@ -103,7 +120,7 @@ p.mailicon {
 
 #wave-section svg {
   width: 100%;
-  height: 100%;
+  height: 80%;
   overflow: visible;
   background-attachment: fixed;
 }
@@ -133,6 +150,48 @@ p.mailicon {
 
   fill: #b2b7dd;
   z-index: -2;
+}
+#wave-section{
+  z-index: -1;
+}
+/* #waves-section::after{
+  content: "Designed and Developed by Team WEBWIZ with ❤️";
+  display:flex;
+  justify-content: center;
+  position: relative;
+  bottom: 65px;
+  z-index: 8;
+} */
+#wave{
+  height: 80%;
+  margin-bottom: -50px;
+}
+/* .footer-bottom{
+  display:flex;
+  justify-content: center;
+  position: relative;
+  bottom: 70px;
+  z-index: 8;
+} */
+.container{
+  padding-bottom: 0px;
+}
+@media screen and (max-width:800px) {
+  .row{
+    flex-direction: column;
+    /* color:green; */
+    justify-content: space-evenly;
+    /* margin: 0rem 8rem; */
+    align-items: center;
+  }
+  .column{
+    margin: 10px;
+  }
+}
+@media screen and (max-width:450px) {
+  .footer-bottom{
+    font-size: 5vw;
+  }
 }
 
 @keyframes wave {

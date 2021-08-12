@@ -20,7 +20,7 @@ import "./Registration.css";
 
 const Registration = () => {
   const gridStyle = {
-    padding: 50,
+    padding: 20,
   };
   const paperStyle = {
     padding: 20,
@@ -34,6 +34,7 @@ const Registration = () => {
 
   return (
     <div className="Parent">
+
       <div id="Parent2">
         <Grid style={gridStyle}>
           <Paper style={paperStyle}>

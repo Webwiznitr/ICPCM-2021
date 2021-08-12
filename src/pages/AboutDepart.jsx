@@ -1,12 +1,41 @@
 import React from 'react';
 
+import Styled from "styled-components"; 
+
+const Departcontainer = Styled.div`
+    font-size: 2rem; 
+    color: #3C4270; 
+    margin-bottom: 0px; 
+`;
+// background: linear-gradient( #949ACB, #9BA1D4, #CACDE5, #fff);
+const Departcard = Styled.div`
+
+display: flex; 
+flex-direction:column;
+width: 100vw; 
+height: fit-content; 
+margin: auto; 
+margin-top: 0px;
+border-radius: 5px;
+justify-content: center;
+align-items: center; 
+`;
+// text-shadow: 0px 1px 4px #3C4270;
+
+const Departcontent = Styled.div`
+  color:black;
+  width: 80%;
+  font-size:1.5rem;
+  `;
+  
+  // text-shadow: 0.1px 0.1px 0.1px #000;
 const AboutDepart = () => {
     return(
         <>
-            <div className="container2">
-      <div className="card mt-4">
-        <h1>About the Department</h1>
-        <div className="content">
+            <Departcontainer>
+            <Departcard>
+        <h1 style={{padding:'15px'}}>About the Department</h1>
+        <Departcontent>
           <p>
             Established in 1964, the Department has emerged as a powerhouse for
             academics, scientific research, and cutting-edge technologies. With
@@ -39,9 +68,10 @@ const AboutDepart = () => {
             hands together with the department for active collaborative
             industrial research on FRP Composites, corrosion, metal extraction.
           </p>
-        </div>
-      </div>
-    </div>
+          </Departcontent>
+          </Departcard>
+
+      </Departcontainer>
         </>
     );
 }
