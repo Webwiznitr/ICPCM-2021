@@ -1,6 +1,7 @@
 import React from "react"; 
 import Slider from "infinite-react-carousel"; 
 import Styled from 'styled-components'; 
+import "../components/glimpses.scss"
 
 import Mehta from '../assets/mehta.png'; 
 
@@ -16,6 +17,7 @@ const GlimpseContainerMain = Styled.div`
     justify-content: center;
     text-align: center;
     align-items: center;
+    margin-top: 100px; 
 `;
 
 
