@@ -8,6 +8,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import './Speaker.css';
+import SpeakersImage1 from "../Speaker_Images/Speaker1.png";
 import SpeakersImage from "../Speaker_Images/circle-cropped.png";
 import Styled from 'styled-components';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -23,7 +24,7 @@ const ImageSpeakerPlaceholder = Styled.img`
 
  width: 95%; 
  height: 95%; 
- margin-left: 8px;
+ margin-left: 4.5px;
  margin-top:10px;
 
 `;
@@ -39,15 +40,15 @@ export default function Speakers() {
           <CardActionArea>
             
 
-            <ImageSpeakerPlaceholder src={SpeakersImage}>
+            <ImageSpeakerPlaceholder src={SpeakersImage1}>
 
             </ImageSpeakerPlaceholder>
 
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2" style={{ fontSize: "2rem", fontWeight: "bold" , }}>
-                Lizard
+              Saeid KAKOOEI
               </Typography>
-              <Typography variant="body2" color="textSecondary" component="p" style={{ color: 'whitesmoke', fontSize: "1.2rem", align: 'centre' }}>
+              <Typography variant="body2" color="textSecondary" component="p" style={{ color: 'whitesmoke', fontSize: "1.2rem", align: 'centre'   }}>
                 Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
                 across all continents except Antarctica
               </Typography>
