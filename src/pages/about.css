@@ -1,0 +1,11 @@
+.about_image {
+    max-height: 40vw; 
+    max-width: 40vw; 
+}
+
+ @media screen and ( max-width: 1300px) {
+    .about_image {
+        max-height: 50vw; 
+        max-width: 50vw; 
+    }
+} 

@@ -13,13 +13,14 @@ import Styled from "styled-components";
 //   `;
 
 const ContainerBox = Styled.div`
-    width: 60%; 
+    width: 50%; 
     background-color: #CACDE5;
     padding: 20px; 
     font-size: 1.2rem; 
     color: white;
+    text-align: center;
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1300px) {
       width: 80%
     }
 `;
@@ -29,6 +30,7 @@ const AboutHeading = Styled.h1`
     font-size: 3rem; 
     color: #949ACB; 
     margin-bottom: 15px; 
+    text-align: center;
   
 `; 
 
@@ -52,12 +54,13 @@ const Card = Styled.section`
       align-items: center; 
 
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1300px) {
       flex-direction: column ; 
       justify-content: center;
       align-items: center; 
     }
      `; 
+
 
 
 
@@ -74,7 +77,7 @@ const About = () => {
             
             }
           }> 
-          <img style = {
+          <img className = "about_image" style = {
             {
               margin: "10px"
             }}

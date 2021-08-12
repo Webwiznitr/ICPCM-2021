@@ -4,14 +4,14 @@ import './navbar.scss'
 
 
 
-const NavLinks = () => {
+const NavLinks = (props) => {
     return (
 
 
         <div className="topnav">
 
             
-              <a href="#home" className="active" >
+              <a href="#home" className="active" onClick= { ()=> props.isMobile && props.closeMobileMenu()} >
                 <NavLink className="navbar_active" to="/" >
                     Home
                 </NavLink> </a>
@@ -22,52 +22,52 @@ const NavLinks = () => {
                 <a href = "#about" className = "dropbtn">  About  </a>
 
                 <div className= "dropdown-content">
-                 <NavLink className="navbarsubcomp" to='./aboutinstitute'> Institute </NavLink>
-                <NavLink className="navbarsubcomp" to='./aboutdepartment'> Department</NavLink>
+                 <NavLink className="navbarsubcomp" to='./aboutinstitute' onClick= { ()=> props.isMobile && props.closeMobileMenu()}> Institute </NavLink>
+                <NavLink className="navbarsubcomp" to='./aboutdepartment' onClick= { ()=> props.isMobile && props.closeMobileMenu() }> Department</NavLink>
                 </div>
                                
                 </div>
 
-                <a href="#timeline" className='navbar'>Timeline</a>
+                <a href="#timeline" className='navbar' onClick= { ()=> props.isMobile && props.closeMobileMenu() }>Timeline</a>
 
                 <div className='dropdown' >
-                <a href = "#about" className = "dropbtn">  Paper  </a>
+                <a href = "#about" className = "dropbtn" onClick= { ()=> props.isMobile && props.closeMobileMenu() }>  Paper  </a>
 
                 <div className= "dropdown-content">
-                 <NavLink className="navbarsubcomp" to='./callforpaper'> Call for  paper </NavLink>
-                <NavLink className="navbarsubcomp" to='./paperguidelines'> Paper Submission Guidelines</NavLink>
+                 <NavLink className="navbarsubcomp" to='./callforpaper' onClick= { ()=> props.isMobile && props.closeMobileMenu() }> Call for  paper </NavLink>
+                <NavLink className="navbarsubcomp" to='./paperguidelines' onClick= { ()=> props.isMobile && props.closeMobileMenu() }> Paper Submission Guidelines</NavLink>
                 </div>
                                
                 </div>
 
                 <div className='dropdown' >
-                <a href = "#about" className = "dropbtn"> Registration  </a>
+                <a href = "#about" className = "dropbtn"  onClick= { ()=> props.isMobile && props.closeMobileMenu() }> Registration  </a>
 
                 <div className= "dropdown-content">
-                 <NavLink className="navbarsubcomp" to='./newregistration'> New Registration </NavLink>
-                <NavLink className="navbarsubcomp" to='./userlogin'> User Login</NavLink>
+                 <NavLink className="navbarsubcomp" to='./newregistration' onClick= { ()=> props.isMobile && props.closeMobileMenu() }> New Registration </NavLink>
+                <NavLink className="navbarsubcomp" to='./userlogin' onClick= { ()=> props.isMobile && props.closeMobileMenu() }> User Login</NavLink>
                 </div>
                                
                 </div>
 
                 <a href="#Sponsorship" className="active" >
-                <NavLink className="navbar_active" to="./sponsorship" >
+                <NavLink className="navbar_active" to="./sponsorship" onClick= { ()=> props.isMobile && props.closeMobileMenu() }>
                 Sponsorship 
                 </NavLink> </a>
 
                 <div className='dropdown' >
-                <a href = "#about" className = "dropbtn"> Commitee  </a>
+                <a href = "#about" className = "dropbtn" onClick= { ()=> props.isMobile && props.closeMobileMenu() }> Commitee  </a>
 
                 <div className= "dropdown-content">
-                 <NavLink className="navbarsubcomp" to='./intercommitee'>International Commitee </NavLink>
-                <NavLink className="navbarsubcomp" to='./natcommitee'>National Commitee</NavLink>
-                <NavLink className="navbarsubcomp" to='./internalcommitee'>Internal Commitee</NavLink>
+                 <NavLink className="navbarsubcomp" to='./intercommitee' onClick= { ()=> props.isMobile && props.closeMobileMenu() }>International Commitee </NavLink>
+                <NavLink className="navbarsubcomp" to='./natcommitee' onClick= { ()=> props.isMobile && props.closeMobileMenu() }>National Commitee</NavLink>
+                <NavLink className="navbarsubcomp" to='./internalcommitee' onClick= { ()=> props.isMobile && props.closeMobileMenu() }>Internal Commitee</NavLink>
                 </div>
                                
                 </div>
 
-                <a href="#downloads" className='navbar'>Downloads</a>
-                <a href="#contact" className='navbar'>Contact</a>
+                <a href="#downloads" className='navbar' onClick= { ()=> props.isMobile && props.closeMobileMenu() }>Downloads</a>
+                <a href="#contact" className='navbar' onClick= { ()=> props.isMobile && props.closeMobileMenu() }>Contact</a>
 
 
 

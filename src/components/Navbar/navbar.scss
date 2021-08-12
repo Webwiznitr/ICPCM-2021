@@ -2,9 +2,18 @@
 
 .hamburger {
     position: absolute;
-    right: 10px; 
-    top: 8px; 
+    right: 30px; 
+    top: 14px; 
+    color: #FFFFFF; 
+    cursor: pointer;
 }
+
+.hamburger:hover {
+    color: #3C4270; 
+    transition: 0.7s ease-in-out;
+}
+
+
 
 
 .topnav {
@@ -28,24 +37,53 @@
 
 
 .dropdown:hover {
+    
+    background-color: #949ACB;
+
+     .dropbtn {
+         color: #CACDE5;         
+         transition: 0.3s ease-in-out;
+     }
+     
     .dropdown-content{
         display: block;
+        background-color: #949ACB;
+        transition: 0.5s ease-out;
         position: absolute;
-        background-color: #CACDE5;
+        font-size: 1.5rem;
+        //margin-top: 27px; 
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        
     }
 
-    .navbarsubcomp {
+    .navbarsubcomp{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #3C4270;
+    }
+
+    .navbarsubcomp:first-child {
         display: block;
         margin-top: 10px; 
+        padding-top: 15px; 
+        color: #3C4270;
+    
         // background-color: red;
+    }
+
+
+    .navbarsubcomp:hover{
+        color:white;
     }
 }
 
 
 .navbarsubcomp:hover {
-    background-color: white;
-    color: black;
-    transition: 0.5s ease-in-out;
+   // background-color: white;
+    color: red; 
+    transition: 0.3s ease-in-out;
 }
 
 
@@ -55,6 +93,8 @@
     .topnav {
         flex-direction: column;
         margin-right: 10%;
+        font-size: 1.5rem;
+        width:100vw;
 
         a , .dropdown{
             margin: 10px 0 ; 
@@ -65,12 +105,6 @@
 
    
 
-    
-
-    .dropbtn{
-        // display: flex;
-        // flex-direction: column;
-    }
 
     .dropdown:hover {
         
@@ -82,8 +116,8 @@
         }
 
         .dropdown-content{
-
-        display: block;
+            position: relative;
+            display: block;
         //position: relative;
 
 
