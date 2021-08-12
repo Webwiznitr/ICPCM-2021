@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding-bottom: 2rem;
+  padding-top: 4rem;
+}
+
+.row {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.col1 {
+  margin-left: 10rem;
+  width: 15rem;
+  box-sizing: border-box;
+  background-color: #cacde5;
+  border-radius: 5%;
+  box-shadow: 5px 5px 0 0 gray;
+}
+
+.Address {
+  padding-left: 3rem;
+}
+
+p.markicon {
+  padding-top: 1rem;
+  margin-left: 5rem;
+}
+
+.col2 {
+  color: white;
+  margin-left: 15rem;
+  width: 15rem;
+  background-color: #b2b7dd;
+  border-radius: 5%;
+  border-radius: 5%;
+  box-shadow: 5px 5px 0 0 gray;
+}
+
+.number {
+  padding-top: 1rem;
+  padding-left: 3rem;
+}
+
+p.phoneicon {
+  padding-top: 1rem;
+  margin-left: 7rem;
+}
+
+.col3 {
+  margin-left: 15rem;
+  width: 15rem;
+  box-sizing: border-box;
+  background-color: #cacde5;
+  border-radius: 5%;
+  border-radius: 5%;
+  box-shadow: 5px 5px 0 0 gray;
+}
+
+p.mailicon {
+  margin-left: 6rem;
+  padding-bottom: 1rem;
+}
+
+.mail {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.mailcon {
+  padding-left: 3rem;
+}
+
+.text-xs-center {
+  align-items: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.end {
+  display: flex;
+  justify-content: center;
+}
+
+#waves-section {
+  padding: 0;
+  margin-top: 100px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background-attachment: fixed;
+}
+
+.wave {
+  animation: wave 3s linear;
+  animation-iteration-count: infinite;
+  fill: #b2b7dd;
+}
+
+#wave1.wave {
+  animation-duration: 10s;
+  z-index: 0;
+  fill: #b2b7dd;
+}
+#wave2 {
+  animation-duration: 5s;
+  animation-direction: reverse;
+
+  height: 100px;
+  fill: #cacde5;
+  z-index: -1;
+}
+
+#wave3 {
+  animation-duration: 7s;
+
+  fill: #b2b7dd;
+  z-index: -2;
+}
+
+@keyframes wave {
+  to {
+    transform: translateX(-100%);
+  }
+}
