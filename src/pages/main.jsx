@@ -13,6 +13,12 @@ import Banner from '../components/Banner';
 //import Contact from './Contact';
 //main body of the website 
 
+// const LandingPoster = Styled.div`
+//     width: 100%;
+//     margin: 0px;
+//     height: 85vh;
+//     margin-bottom: 5rem;
+// `;
 
 const Main = () => {
     return(

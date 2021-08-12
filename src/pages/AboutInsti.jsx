@@ -1,17 +1,47 @@
-import React from 'react'
+import React from 'react';
+
+
+import Styled from "styled-components"; 
 import BannerSmall from "../components/BannerSmall"
+
+const Departcontainer = Styled.div`
+    font-size: 2rem; 
+    color: #3C4270; 
+    margin-bottom: 0px; 
+`;
+// background: linear-gradient( #949ACB, #9BA1D4, #CACDE5, #fff);
+const Departcard = Styled.div`
+
+display: flex; 
+flex-direction:column;
+width: 100vw; 
+height: fit-content; 
+margin: auto; 
+margin-top: 0px;
+border-radius: 5px;
+justify-content: center;
+align-items: center; 
+`;
+// text-shadow: 0px 1px 4px #3C4270;
+
+const Departcontent = Styled.div`
+  color:black;
+  width: 80%;
+  font-size:1.5rem;
+  `;
+  // text-shadow: 1px 1px 4px #000;
 
 const AboutInsti = () => {
     return(
-        <div>
-        <BannerSmall/>
+        <>
+       <BannerSmall/>
+            <Departcontainer>
+            <Departcard>
+        <h1 style={{padding:'15px'}}>About the Institute</h1>
+        <Departcontent>
 
-            <div className = " about_section_container_insti_dept">
-      <div>
-        <h1 className= "about_the_insti_dept_heading">About the institute</h1>
-        <div className="about_dept_inti_content">
           <p>
-            National Institute of Technology Rourkela (NIT Rourkela), formerly
+          National Institute of Technology Rourkela (NIT Rourkela), formerly
             known as Regional Engineering College Rourkela (REC Rourkela) is an
             institute of higher learning for engineering and technology, funded
             by the Government of India and located in the steel city of
@@ -44,12 +74,18 @@ const AboutInsti = () => {
             flowers in the campus further make the stay very pleasant and
             enjoyable.
           </p>
-        </div>
-      </div>
-    </div>
-        </div>
+          </Departcontent>
+          </Departcard>
+
+      </Departcontainer>
+        </>
     );
 }
 
 
+
 export default AboutInsti;
+
+
+
+            

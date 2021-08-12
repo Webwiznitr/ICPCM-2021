@@ -17,10 +17,10 @@ import Checkbox from "@material-ui/core/Checkbox";
 import Box from "@material-ui/core/Box";
 import Table from "./Table";
 import "./Registration.css";
-
+import BannerSmall from "../components/BannerSmall"
 const Registration = () => {
   const gridStyle = {
-    padding: 50,
+    padding: 20,
   };
   const paperStyle = {
     padding: 20,
@@ -34,6 +34,8 @@ const Registration = () => {
 
   return (
     <div className="Parent">
+<BannerSmall/>
+
       <div id="Parent2">
         <Grid style={gridStyle}>
           <Paper style={paperStyle}>
