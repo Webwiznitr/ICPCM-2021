@@ -37,6 +37,9 @@ const NavigationMobile =()=> {
     }
 />
 
+ const closeMobileMenu = () => setOpen(false) ; 
+ 
+
     return (
         <NavigationMobileHeader>
        
@@ -45,7 +48,7 @@ const NavigationMobile =()=> {
 
         {open? CloseIcon : HamburgerIcon}
 
-   { open &&  <NavLinks /> } 
+   { open &&  <NavLinks isMobile={ true} closeMobileMenu = {closeMobileMenu} /> } 
 
     </NavigationMobileHeader>
     )

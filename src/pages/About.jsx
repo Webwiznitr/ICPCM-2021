@@ -19,7 +19,7 @@ const ContainerBox = Styled.div`
     font-size: 1.2rem; 
     color: white;
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1200px) {
       width: 80%
     }
 `;

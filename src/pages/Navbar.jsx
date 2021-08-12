@@ -9,12 +9,13 @@ import NavigationMobile from '../components/Navbar/NavigationMobile';
 
 const Header = Styled.header`
     margin: 0 ; 
-    padding: 10px; 
+    padding: 15px; 
     width: 100vw;
     display: flex; 
     justify-content: center;
-    background-color: #CACDE5;
+    background-color: #949ACB;
     height: fit-content; 
+    overflow: hidden;
 
 
     @media screen and (max-width : 900px ){
