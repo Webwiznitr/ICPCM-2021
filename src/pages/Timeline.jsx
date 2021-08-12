@@ -22,7 +22,7 @@ const Timeline = () => {
         <>
         <section className="timeline">
             <div>
-            <h1 className="heading" >Important Dates </h1>
+            <h1 className="theading" >Important Dates </h1>
             </div>
 
             <div className="schedule"> 

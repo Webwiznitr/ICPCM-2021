@@ -1,0 +1,35 @@
+.Cards{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* border: 2px solid black; */
+    margin: 5px auto;
+    padding: 5px;
+    height: auto;
+    width: 90%;
+}
+.card{
+    /* border: 5px solid black; */
+    background-color: whitesmoke;
+    width: 30%;
+    height: fit-content;
+    margin: 12px;
+    padding: 5px;
+}
+#random{
+    background: linear-gradient( #949ACB , #3C4270);
+    margin: auto;
+}
+.Name{
+    font-weight: 900;
+}
+
+.MuiCardMedia-img {
+    height: fit-content;
+    width: fit-content;
+    /* transform: scale(0.6); */
+
+}
+

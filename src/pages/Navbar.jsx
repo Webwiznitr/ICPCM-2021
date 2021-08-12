@@ -26,6 +26,8 @@ const Header = Styled.header`
 
 
 const Navbar = () => {
+
+    
     return (
         <Header>
 
@@ -48,6 +50,33 @@ const Navbar = () => {
         </Header>
     );
 };
+
+
+const menuBtn = document.querySelector('.menu_btn');
+let menuOpen=false;
+
+
+ if(menuBtn) {
+
+    console.log("harbu not found")
+    
+
+    menuBtn.addEventListener('onClick', () => {
+
+        if(!menuOpen){
+            menuBtn.className = "open";
+            
+            console.log('nkfe');
+            menuOpen = true;
+        } else {
+            menuBtn.className = 'o';
+            menuOpen = false;
+        }
+    }, false );
+    
+
+}
+
 
 export default Navbar;
 
