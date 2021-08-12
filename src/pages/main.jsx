@@ -7,7 +7,8 @@ import Sponsors from './Sponsors';
 
 import Glimpse from './glimpses';
 import Downloads from './Downloads';
-import '../components/glimpses.scss'; 
+
+//import '../components/glimpses.scss'; 
 //import Contact from './Contact';
 //main body of the website 
 
