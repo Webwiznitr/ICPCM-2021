@@ -7,8 +7,7 @@ import Sponsors from './Sponsors';
 
 import Glimpse from './glimpses';
 import Downloads from './Downloads';
-// import LandingPagePoster from '../LandingPageAssets/landingPagePoster.png'
-// import Styled from "styled-components";
+import Banner from '../components/Banner';
 
 //import '../components/glimpses.scss'; 
 //import Contact from './Contact';
@@ -24,13 +23,14 @@ import Downloads from './Downloads';
 const Main = () => {
     return(
         <section> 
-            
+            <Banner/>
             <About/>
+            <Sponsors/>
             <Timeline/>
             
             <Speakers/>
              
-            <Sponsors/>
+            
             <Glimpse/>
 
             <Downloads/>

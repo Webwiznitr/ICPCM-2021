@@ -22,7 +22,7 @@ const Sponsors = () => {
       <Item className = "sponsors-carousel" >
         
         <div className="zx" style={{textAlign:"center",fontSize:"3rem",fontWeight:"500" }}>Sponsors </div>
-      <Slider  className = "carousel-initialised" style = { { margin: "10px", padding: " 10px"}} autoplay = {true}  slidesToShow = {3} arrows = { true} autoplaySpeed = { 900 }  dots>
+      <Slider  className = "carousel-initialised" style = { { margin: "10px", padding: " 10px"}} autoplay = {true}  slidesToShow = {6} arrows = { false} autoplaySpeed = { 900 } >
       
       <img className="sponsors_img" src= {SponsorImage} alt= " not found" style = { SponsorImageStyle} />
       <img className="sponsors_img" src= {SponsorImage} alt= "not found" style = { SponsorImageStyle} />

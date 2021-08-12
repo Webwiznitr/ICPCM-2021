@@ -2,6 +2,7 @@ import React from 'react';
 
 
 import Styled from "styled-components"; 
+import BannerSmall from "../components/BannerSmall"
 
 const Departcontainer = Styled.div`
     font-size: 2rem; 
@@ -33,11 +34,12 @@ const Departcontent = Styled.div`
 const AboutInsti = () => {
     return(
         <>
-       
+       <BannerSmall/>
             <Departcontainer>
             <Departcard>
         <h1 style={{padding:'15px'}}>About the Institute</h1>
         <Departcontent>
+
           <p>
           National Institute of Technology Rourkela (NIT Rourkela), formerly
             known as Regional Engineering College Rourkela (REC Rourkela) is an

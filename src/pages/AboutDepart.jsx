@@ -1,11 +1,11 @@
 import React from 'react';
 
 import Styled from "styled-components"; 
-
+import BannerSmall from "../components/BannerSmall"
 const Departcontainer = Styled.div`
-    font-size: 2rem; 
-    color: #3C4270; 
-    margin-bottom: 0px; 
+font-size: 2rem; 
+color: #3C4270; 
+margin-bottom: 0px; 
 `;
 // background: linear-gradient( #949ACB, #9BA1D4, #CACDE5, #fff);
 const Departcard = Styled.div`
@@ -23,15 +23,16 @@ align-items: center;
 // text-shadow: 0px 1px 4px #3C4270;
 
 const Departcontent = Styled.div`
-  color:black;
-  width: 80%;
-  font-size:1.5rem;
-  `;
+color:black;
+width: 80%;
+font-size:1.5rem;
+`;
   
   // text-shadow: 0.1px 0.1px 0.1px #000;
 const AboutDepart = () => {
     return(
         <>
+<BannerSmall/>
             <Departcontainer>
             <Departcard>
         <h1 style={{padding:'15px'}}>About the Department</h1>
