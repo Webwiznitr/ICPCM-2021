@@ -99,16 +99,16 @@ function Banner() {
         <BannerContainer>
             <BannerLogoContainer>
                 <LogoContainer>
-                    <img className="banner_logo" src={ICPCM}/>
+                    <img className="banner_logo" src={ICPCM} alt= "" />
                 </LogoContainer>
                 <LogoContainer>
-                <img className="banner_logo" src= {NIT_R_Logo}/>
-                <img className ="banner_logo" src={NIT_R_Jubli}/>
+                <img className="banner_logo" src= {NIT_R_Logo} alt = ""/>
+                <img className ="banner_logo" src={NIT_R_Jubli} alt= "" />
             </LogoContainer>
             </BannerLogoContainer>
 
         <BannerTextImage>
-        <img className="banner_image" src='https://res.cloudinary.com/manjeetdhayal/image/upload/v1628793101/redsea/icpcm_sand_logo_white_purple_bg_pqardf.png'/>
+        <img className="banner_image" src='https://res.cloudinary.com/manjeetdhayal/image/upload/v1628793101/redsea/icpcm_sand_logo_white_purple_bg_pqardf.png' alt= "" />
       
             <TextBox>
                 <div className="banner_text_container">

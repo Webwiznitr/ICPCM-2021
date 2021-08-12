@@ -6,7 +6,7 @@ const AboutInsti = () => {
         <div>
         <BannerSmall/>
 
-            <div className="container" className = " about_section_container_insti_dept">
+            <div className = " about_section_container_insti_dept">
       <div>
         <h1 className= "about_the_insti_dept_heading">About the institute</h1>
         <div className="about_dept_inti_content">

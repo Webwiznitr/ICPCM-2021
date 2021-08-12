@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.css';
-import Conference_Img from '../About_Images/bgpic.png';
+
 
 import Styled from "styled-components"; 
 

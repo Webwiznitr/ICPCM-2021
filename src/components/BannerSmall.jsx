@@ -43,15 +43,15 @@ function BannerSmall() {
         <SmallBannerContainer>
         <SmallBannerLogoContainer>
             <LogoContainer>
-                <img className="banner_logo" src={ICPCM}/>
+                <img className="banner_logo" src={ICPCM}  alt= "" />
             </LogoContainer>
 
             <div className="banner_small_text_container">
                     <h2 className="small_International_conference">3rd International Conference </h2>
                      </div>
             <LogoContainer>
-            <img className="banner_logo" src= {NIT_R_Logo}/>
-            <img className ="banner_logo" src={NIT_R_Jubli}/>
+            <img className="banner_logo" src= {NIT_R_Logo} alt= "" />
+            <img className ="banner_logo" src={NIT_R_Jubli} alt= "" />
         </LogoContainer>
     </SmallBannerLogoContainer>
 
