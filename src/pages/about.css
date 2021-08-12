@@ -3,9 +3,26 @@
     max-width: 40vw; 
 }
 
+
  @media screen and ( max-width: 1300px) {
     .about_image {
         max-height: 50vw; 
         max-width: 50vw; 
     }
 } 
+.about_section_container_insti_dept {
+    background-image: url("https://res.cloudinary.com/manjeetdhayal/image/upload/v1628791271/redsea/background_landing_page_with_waves_vuteej.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about_content {
+    font-size: 1.5rem;
+        
+}
+
+@media screen and (max-width: 600px) {
+    .about_content {
+        font-size: 1.2rem;
+    }
+}

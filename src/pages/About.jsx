@@ -13,7 +13,7 @@ import Styled from "styled-components";
 //   `;
 
 const ContainerBox = Styled.div`
-    width: 50%; 
+    width: 90%; 
     background-color: #CACDE5;
     padding: 20px; 
     font-size: 1.2rem; 
@@ -27,18 +27,12 @@ const ContainerBox = Styled.div`
 
 const AboutHeading = Styled.h1`  
   
-    font-size: 3rem; 
+    font-size: 4rem; 
     color: #949ACB; 
     margin-bottom: 15px; 
     text-align: center;
   
 `; 
-
-const ContainerBoxImage = Styled.div`  
-width: 40%; 
-background-color: #CACDE5;
- 
-`;
 
 
 const Card = Styled.section`
@@ -48,7 +42,6 @@ const Card = Styled.section`
     width: 100vw; 
     height: fit-content; 
     margin: auto; 
-    margin-top: 100px;
     border-radius: 5px;
     justify-content: center;
       align-items: center; 
@@ -71,23 +64,10 @@ const About = () => {
 
         <Card>
 
-<ContainerBoxImage  style = {
-            {
-              backgroundColor: "#CACDE5"
-            
-            }
-          }> 
-          <img className = "about_image" style = {
-            {
-              margin: "10px"
-            }}
-            src = {Conference_Img} alt = "not found" />
-
-          </ContainerBoxImage>
 
           <ContainerBox  className= " para_content" >  <AboutHeading> ABOUT THE CONFERENCE </AboutHeading>
 
-       <p>
+       <p  className = "about_content" style = { { color: "black", fontWeight: "500px"}}>
        The Department of Metallurgical and Materials Engineering, National
                      Institute of Technology Rourkela is going to organize the 3rd
                      International Conference on Processing and Characterization of

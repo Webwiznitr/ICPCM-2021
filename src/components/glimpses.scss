@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .carousel-row {
     margin: 10px 10px;
 
@@ -34,4 +38,61 @@ button.carousel-arrow.block.carousel-next::before{
 .sc-jSFjdj.ipjBfb.sponsors-carousel img {
     max-width: 100px;
     max-height: 100px;
+}
+
+//-------------------------banner_logo
+
+.banner_logo {
+    width: 70px;
+    height: 70px; 
+    margin: 0 10px;
+}
+
+.banner_image{
+    width: 400px;
+    background: transparent;
+}
+
+.banner_text_container {
+    display: flex;
+    flex-direction: column;   
+
+    .Banner_date {
+        color:#2B2F50; 
+        font-size: 2rem; 
+    }
+    
+}
+
+@media screen and (max-width: 1040px) {
+    .banner_image {
+        width: 350px;
+    }
+
+}
+
+//-----------------------------
+
+.banner_small_text_container {
+    text-align: center;
+    color: #2B2F50;
+}
+
+.small_Banner_date {
+    color:#2B2F50; 
+}
+
+@media screen and (min-width: 800px) {
+    .small_International_conference{
+        font-size: 1.7rem;
+    }
+    
+    .small_ProAndCha {
+        font-size: 2rem;
+    }
+
+    .small_Banner_date {
+        font-size: 1.7rem;
+    }
+
 }
