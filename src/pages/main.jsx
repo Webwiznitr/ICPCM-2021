@@ -7,6 +7,7 @@ import Sponsors from './Sponsors';
 
 import Glimpse from './glimpses';
 import Downloads from './Downloads';
+import Footer from './Footer';
 import '../components/glimpses.scss'; 
 //import Contact from './Contact';
 //main body of the website 
@@ -25,6 +26,7 @@ const Main = () => {
             <Glimpse/>
 
             <Downloads/>
+            <Footer/>
 
             {/*  We dont need footer here we imported it in main file */}
             {/* <footer>
