@@ -50,7 +50,7 @@ const NavLinks = () => {
                                
                 </div>
 
-                <a href="#" className="active" >
+                <a href="#Sponsorship" className="active" >
                 <NavLink className="navbar_active" to="./sponsorship" >
                 Sponsorship 
                 </NavLink> </a>
