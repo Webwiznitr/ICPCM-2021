@@ -71,6 +71,14 @@ button.carousel-arrow.block.carousel-next::before{
 
 }
 
+// @media screen and (max-width: 500px) {
+//    .Banner_date {
+//         color:#2B2F50; 
+//         font-size: 2rem;
+//         color: red; 
+//     }
+// }
+
 //-----------------------------
 
 .banner_small_text_container {
@@ -117,4 +125,8 @@ button.carousel-arrow.block.carousel-next::before{
 
 .markicon {
     margin-left: 90px;
+}
+
+.about_the_institute_department {
+    font-size: 2.5rem;
 }

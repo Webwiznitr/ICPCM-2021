@@ -9,8 +9,8 @@ import Styled from 'styled-components';
 const BannerContainer = Styled.div`
     display:flex;
     width: 100%;
-    height: 500px; 
-    background-color: red;   
+    height: 560px; 
+    // background-color: red;   
     flex-direction: column; 
     margin:0 ; 
     padding: 0; 
@@ -19,7 +19,10 @@ const BannerContainer = Styled.div`
     background-repeat: no-repeat;
 
     @media screen and (max-width: 740px) {
-        height: 700px;
+        height: 750px;
+    }
+    @media screen and (max-width: 740px) {
+        height: 780px;
     }
     
     `;
@@ -41,11 +44,13 @@ const BannerTextImage = Styled.div`
      display: flex;
      justify-content: space-evenly;
      margin-top: 30px; 
+    
 
      @media screen and (max-width: 740px) {
          flex-direction: column; 
          justify-content: center;
          align-items: center;
+        
      }
 
 `; 
@@ -66,6 +71,7 @@ const TextBox = Styled.div`
   @media screen and (max-width: 740px) {
       width: 100vw; 
       text-align: center;
+      overflow-y: hidden;
   }
 `;
 
@@ -73,24 +79,30 @@ const HeadH1 = Styled.div `
 color: white;
 font-size: 2rem;
 margin: 10px;
--webkit-text-stroke: 1px black;
+font-weight: bold;
+//-webkit-text-stroke: 1px black;
 
 @media screen and (max-width: 1040px) {
     font-size: 1.5rem;
-    -webkit-text-stroke: 0.7px black; 
+    //-webkit-text-stroke: 0.7px black; 
 }
 
 `; 
 
 const HeadingMain = Styled.div`
 color: #2B2F50;
-font-size: 3rem;
+font-size: 3.5rem;
+font-weight: 1000;
 margin: 10px;
 
 @media screen and (max-width: 1040px) {
     font-size: 2rem; 
     font-weight: bold; 
 }
+
+
+
+
 `; 
 
 

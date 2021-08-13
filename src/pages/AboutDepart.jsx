@@ -37,7 +37,7 @@ const AboutDepart = () => {
               backgroundColor: "#CACDE5"
             }}>
             <Departcard>
-        <h1 style={{padding:'15px'}}>About the Department</h1>
+        <h1 className = "about_the_institute_department" style={{padding:'15px'}}>About the Department</h1>
         <Departcontent>
           <p>
             Established in 1964, the Department has emerged as a powerhouse for
