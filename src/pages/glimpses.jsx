@@ -17,7 +17,9 @@ const GlimpseContainerMain = Styled.div`
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin-top: 100px; 
+    padding-top: 40px;
+    // margin-top: 100px;
+    padding-bottom: 40px; 
 `;
 
 
@@ -53,16 +55,16 @@ function Glimpse() {
 
        
         
-        <Slider autoplay = {true}  adaptiveHeight = {true} slidesToShow = {3}  arrows = {true }>
-            <img src = { Mehta} alt="img not found" />
-            <img src = { Mehta} alt="img not found" />
-            <img src = { Mehta} alt="img not found" />
-            <img src = { Mehta} alt="img not found" />
-            <img src = { Mehta} alt="img not found" />
-            <img src = { Mehta} alt="img not found" />
+        <Slider autoplay = {true}  adaptiveHeight = {true} slidesToShow = {3}  arrows = { false }>
+            <img src ="https://res.cloudinary.com/manjeetdhayal/image/upload/v1628806290/redsea/glimpses_img_ie0bmj.jpg" alt="img not found" />
+            <img src ="https://res.cloudinary.com/manjeetdhayal/image/upload/v1628806290/redsea/glimpses_img_ie0bmj.jpg" alt="img not found" />
+            <img src ="https://res.cloudinary.com/manjeetdhayal/image/upload/v1628806290/redsea/glimpses_img_ie0bmj.jpg" alt="img not found" />
+            <img src ="https://res.cloudinary.com/manjeetdhayal/image/upload/v1628806290/redsea/glimpses_img_ie0bmj.jpg" alt="img not found" />
+            <img src ="https://res.cloudinary.com/manjeetdhayal/image/upload/v1628806290/redsea/glimpses_img_ie0bmj.jpg" alt="img not found" />
+            <img src ="https://res.cloudinary.com/manjeetdhayal/image/upload/v1628806290/redsea/glimpses_img_ie0bmj.jpg" alt="img not found" />
         </Slider>
       
-
+{/* 
      
 
         <Slider autoplaySpeed = { 1500 }  autoplay = {true}  adaptiveHeight = {true} slidesToShow = {3}  arrows = { true}>
@@ -72,7 +74,7 @@ function Glimpse() {
             <img src = { Mehta} alt="img not found" />
             <img src = { Mehta} alt="img not found" />
             <img src = { Mehta} alt="img not found" />
-        </Slider>
+        </Slider> */}
 
         </GlimpseContainer>
     </GlimpseContainerMain>)

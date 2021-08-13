@@ -2,12 +2,14 @@ import React from 'react';
 
 import About from './About'
 import Timeline from './Timeline';
-import Speakers from './Speakers';
+
 import Sponsors from './Sponsors';
 
 import Glimpse from './glimpses';
 import Downloads from './Downloads';
 import Banner from '../components/Banner';
+import Project from './SpeakersSection';
+
 
 //import '../components/glimpses.scss'; 
 //import Contact from './Contact';
@@ -27,13 +29,16 @@ const Main = () => {
             <About/>
             <Sponsors/>
             <Timeline/>
+            <Project/>
             
-            <Speakers/>
+            {/* <Speakers/> */}
              
             
             <Glimpse/>
+            {/* <FooterSection/> */}
 
-            <Downloads/>
+            {/* <Downloads/> */}
+            
 
             {/*  We dont need footer here we imported it in main file */}
             {/* <footer>

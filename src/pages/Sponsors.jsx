@@ -7,8 +7,9 @@ import "../components/glimpses.scss"
 //Carousal of confirmed sponsors
 
 const Item = styled.div`
-width: 80vw; 
-margin: 100px auto; 
+width: 100vw; 
+ padding: 100px 10vw; 
+background-color: #CACDE5;
 }`;
 
 const SponsorImageStyle = {
@@ -21,7 +22,7 @@ const Sponsors = () => {
     return (
       <Item className = "sponsors-carousel" >
         
-        <div className="zx" style={{textAlign:"center",fontSize:"3rem",fontWeight:"500" }}>Sponsors </div>
+        <div className="zx" style={{textAlign:"center",fontSize:"3rem",fontWeight:"500", marginBottom:"30px" }}>Sponsors </div>
       <Slider  className = "carousel-initialised" style = { { margin: "10px", padding: " 10px"}} autoplay = {true}  slidesToShow = {6} arrows = { false} autoplaySpeed = { 900 } >
       
       <img className="sponsors_img" src= {SponsorImage} alt= " not found" style = { SponsorImageStyle} />
