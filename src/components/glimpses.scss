@@ -96,3 +96,25 @@ button.carousel-arrow.block.carousel-next::before{
     }
 
 }
+
+
+//---speakers 
+
+.speakers_image {
+    max-width: 100px;
+    max-height: 100px;
+    min-width: 150px;
+    min-height: 150px;
+    border-radius: 50%;
+    margin-top: 0px; 
+}
+
+.speakers {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 30px;
+}
+
+.markicon {
+    margin-left: 90px;
+}

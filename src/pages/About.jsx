@@ -28,7 +28,7 @@ const ContainerBox = Styled.div`
 const AboutHeading = Styled.h1`  
   
     font-size: 4rem; 
-    color: #949ACB; 
+    color: #505896; 
     margin-bottom: 15px; 
     text-align: center;
   

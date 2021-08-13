@@ -13,7 +13,8 @@ import InterCommitee from './pages/Commitee';
 import NatCommitee from './pages/NatCommitee';
 import IntrnalCommitee from './pages/InternlCommitee';
 import NotFound from './pages/Notfound';
-import Footer from './pages/Footer';
+import './pages/Footer.css'
+import FooterSection from './pages/footersection';
 // IMPORTANT POINTS 
 
 // ADD HEADER COMPONENT IN FUNCTION APP() 
@@ -55,7 +56,7 @@ function App() {
         </main>
 
 
-        <Footer/>
+        <FooterSection/>
 
       </div>
 

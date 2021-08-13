@@ -1,5 +1,7 @@
 *{
   overflow-x: hidden;
+/* font-family: 'Ubuntu Mono', monospace; */
+font-family: 'Merriweather', serif;
 }
 body {
   margin: 0;

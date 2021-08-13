@@ -33,7 +33,9 @@ const AboutDepart = () => {
     return(
         <>
 <BannerSmall/>
-            <Departcontainer>
+            <Departcontainer style = { { 
+              backgroundColor: "#CACDE5"
+            }}>
             <Departcard>
         <h1 style={{padding:'15px'}}>About the Department</h1>
         <Departcontent>
