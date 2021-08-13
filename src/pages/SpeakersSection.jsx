@@ -41,7 +41,7 @@ const Cardforproject = styled.div`
 
 const Projectcard = styled.div`
   width: 300px; 
-  height: 320px; 
+  height: 330px; 
   display: flex; 
   //border: solid 2px red; 
   flex-direction: column ;
