@@ -35,9 +35,11 @@ const AboutInsti = () => {
     return(
         <>
        <BannerSmall/>
-            <Departcontainer>
+            <Departcontainer  style = { { 
+              backgroundColor: "#CACDE5"
+            }}>
             <Departcard>
-        <h1 style={{padding:'15px'}}>About the Institute</h1>
+        <h1 className = "about_the_institute_department" style={{padding:'15px'}}>About the Institute</h1>
         <Departcontent>
 
           <p>

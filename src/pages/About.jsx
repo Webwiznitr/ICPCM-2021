@@ -27,10 +27,21 @@ const ContainerBox = Styled.div`
 
 const AboutHeading = Styled.h1`  
   
-    font-size: 4rem; 
+    font-size: 3rem; 
     color: #505896; 
     margin-bottom: 15px; 
     text-align: center;
+
+    @media screen and (max-width: 740px) {
+      font-size: 2.5rem;
+  }
+
+  @media screen and (max-width: 560px) {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
   
 `; 
 

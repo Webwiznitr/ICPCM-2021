@@ -3,7 +3,7 @@ import React from 'react';
 import About from './About'
 import Timeline from './Timeline';
 
-import Sponsors from './Sponsors';
+
 
 import Glimpse from './glimpses';
 //import Downloads from './Downloads';
@@ -27,7 +27,7 @@ const Main = () => {
         <section> 
             <Banner/>
             <About/>
-            <Sponsors/>
+            {/* <Sponsors/> */}
             <Timeline/>
             <Project/>
             

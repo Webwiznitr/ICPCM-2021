@@ -55,12 +55,12 @@ function Glimpse() {
        
         
         <Slider autoplay = {true}  adaptiveHeight = {true} slidesToShow = {3}  arrows = { false }>
+            <img src ="https://res.cloudinary.com/manjeetdhayal/image/upload/v1628861228/redsea/gli1_koterq.jpg" alt="img not found" />
+            <img src ="https://res.cloudinary.com/manjeetdhayal/image/upload/v1628861225/redsea/gli3_egxlrs.jpg" alt="img not found" />
+            <img src ="https://res.cloudinary.com/manjeetdhayal/image/upload/v1628861224/redsea/gli2_qvmfy6.jpg" alt="img not found" />
             <img src ="https://res.cloudinary.com/manjeetdhayal/image/upload/v1628806290/redsea/glimpses_img_ie0bmj.jpg" alt="img not found" />
-            <img src ="https://res.cloudinary.com/manjeetdhayal/image/upload/v1628806290/redsea/glimpses_img_ie0bmj.jpg" alt="img not found" />
-            <img src ="https://res.cloudinary.com/manjeetdhayal/image/upload/v1628806290/redsea/glimpses_img_ie0bmj.jpg" alt="img not found" />
-            <img src ="https://res.cloudinary.com/manjeetdhayal/image/upload/v1628806290/redsea/glimpses_img_ie0bmj.jpg" alt="img not found" />
-            <img src ="https://res.cloudinary.com/manjeetdhayal/image/upload/v1628806290/redsea/glimpses_img_ie0bmj.jpg" alt="img not found" />
-            <img src ="https://res.cloudinary.com/manjeetdhayal/image/upload/v1628806290/redsea/glimpses_img_ie0bmj.jpg" alt="img not found" />
+            {/* <img src ="https://res.cloudinary.com/manjeetdhayal/image/upload/v1628806290/redsea/glimpses_img_ie0bmj.jpg" alt="img not found" />
+            <img src ="https://res.cloudinary.com/manjeetdhayal/image/upload/v1628806290/redsea/glimpses_img_ie0bmj.jpg" alt="img not found" /> */}
         </Slider>
       
 {/* 

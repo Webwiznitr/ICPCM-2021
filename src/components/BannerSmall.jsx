@@ -9,8 +9,8 @@ import Styled from 'styled-components';
 const SmallBannerContainer = Styled.div`
     display:flex;
     width: 100%;
-    height: 200px; 
-    background-color: red;   
+    height: 215px; 
+    background-color: #CACDE5;   
     flex-direction: column; 
     margin:0 ; 
     padding: 0; 
@@ -18,8 +18,15 @@ const SmallBannerContainer = Styled.div`
     background-size: cover;
     background-repeat: no-repeat;
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 800px) {
         height: 230px;
+    }
+
+    @media screen and (max-width: 600px) {
+        height: 260px;
+    }
+    @media screen and (max-width: 530px) {
+        height: 300px;
     }
     
     `;
