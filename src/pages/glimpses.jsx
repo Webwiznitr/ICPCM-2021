@@ -3,7 +3,6 @@ import Slider from "infinite-react-carousel";
 import Styled from 'styled-components'; 
 import "../components/glimpses.scss"
 
-import Mehta from '../assets/mehta.png'; 
 
 
 // import { GlimpseImages } from "../components/glimpseImages";

@@ -6,7 +6,7 @@ import Timeline from './Timeline';
 import Sponsors from './Sponsors';
 
 import Glimpse from './glimpses';
-import Downloads from './Downloads';
+//import Downloads from './Downloads';
 import Banner from '../components/Banner';
 import Project from './SpeakersSection';
 

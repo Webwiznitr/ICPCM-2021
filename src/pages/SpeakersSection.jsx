@@ -74,7 +74,7 @@ const Project = () => {
                 {Spedata.map(element => {
 
                     return <Projectcard >
-                        <img className = "speakers_image" src = {element.imgsrc}/> 
+                        <img className = "speakers_image" src = {element.imgsrc} alt=""/> 
                         <SpekName> {element.name}</SpekName>
                         <Desc> {element.desc} </Desc>
                         </Projectcard>;
