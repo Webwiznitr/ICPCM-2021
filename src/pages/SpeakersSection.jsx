@@ -41,13 +41,14 @@ const Cardforproject = styled.div`
 
 const Projectcard = styled.div`
   width: 300px; 
-  height: 320px; 
+  height: 340px; 
   display: flex; 
   //border: solid 2px red; 
   flex-direction: column ;
   justify-content: center; 
   text-align: center; 
   align-items: center;
+  
   
 `; 
 
@@ -57,13 +58,15 @@ const SpekName = styled.h1`
     font-size: 1.5rem; 
     color: black; 
     font-weight: bold;
-    margin-top:  5px; 
+    margin-top:  5px;
+    overflow-y: hidden; 
 `;
 
 const Desc = styled.h2`
     font-size: 1rem; 
     color: black; 
     //color: #2B2F50;
+    overflow-y: hidden;
     `; 
 
 const Project = () => {
