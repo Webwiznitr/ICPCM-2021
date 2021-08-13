@@ -73,7 +73,7 @@ function FooterSection() {
                 ICPCM &copy;{new Date().getFullYear()} - All Rights Reserved
               </p>
            
-                <p className="end">
+                <p className="end" style= { { textAlign: "center"}}>
                   Designed and Developed by Team WEBWIZ with ❤️
                 </p>
             </div>
