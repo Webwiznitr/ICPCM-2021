@@ -127,6 +127,56 @@ button.carousel-arrow.block.carousel-next::before{
     margin-left: 90px;
 }
 
+//----------about insti depart
+
 .about_the_institute_department {
     font-size: 2.5rem;
+    text-align: center;
 }
+
+//-------------loader 
+.preloader_body {
+    width:100vw; 
+    height: 100vh; 
+    background-color: black;
+    background-image: url('https://res.cloudinary.com/manjeetdhayal/image/upload/v1628915759/redsea/NITR_diamondjubilee_logo_jrvjsv.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.load{
+    //border: 1px solid #ECF0F1;
+    padding: 1px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform-origin: center center;
+    transform:translate(-50%, -50%) rotate(135deg);
+    /*change these sizes to fit into your project*/
+    width:50px;
+    height:50px;
+    overflow: hidden;
+    
+  }
+  .load hr{
+    border:0;
+    margin:0;
+    width:30%;
+    height:30%;
+    position:absolute;
+    border-radius:50%;
+    animation:spin 2s ease infinite;
+  }
+  
+  .load :first-child{background:#19A68C;animation-delay:-1.5s}
+  .load :nth-child(2){background:#F63D3A;animation-delay:-1s}
+  .load :nth-child(3){background:#FDA543;animation-delay:-0.5s}
+  .load :last-child{background:#193B48}
+  
+  @keyframes spin{
+    0%,100%{transform:translateX(200%)}
+    25%{transform:translateY(200%)}
+    50%{transform:translateX(0)}
+    75%{transform:translateY(0)}
+  }

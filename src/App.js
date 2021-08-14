@@ -15,6 +15,9 @@ import IntrnalCommitee from './pages/InternlCommitee';
 import NotFound from './pages/Notfound';
 import './pages/Footer.css'
 import FooterSection from './pages/footersection';
+
+import Loader from './components/preloader';
+import { useState, useEffect } from "react";
 // IMPORTANT POINTS 
 
 // ADD HEADER COMPONENT IN FUNCTION APP() 
@@ -26,7 +29,19 @@ import FooterSection from './pages/footersection';
 
 
 function App() {
-  return (
+
+  const [loading, setLoading] = useState(false); 
+
+  useEffect(()=> {
+    setLoading(true); 
+    setTimeout(
+      ()=>{
+        setLoading(false); 
+      },2000 
+    ); 
+  }, []); 
+
+  return loading ? ( <Loader/>) : (
     <>
     {/* // adding router to catch error if main not found  */}
     <Router>
