@@ -57,12 +57,12 @@ const NavLinks = (props) => {
                 </NavLink> </a>
 
                 <div className='dropdown' >
-                <a href = "#about" className = "dropbtn" onClick= { ()=> props.isMobile && props.closeMobileMenu() }> Commitee  </a>
+                <a href = "#about" className = "dropbtn" onClick= { ()=> props.isMobile && props.closeMobileMenu() }> Committee  </a>
 
                 <div className= "dropdown-content">
-                 <NavLink className="navbarsubcomp" to='./intercommitee' onClick= { ()=> props.isMobile && props.closeMobileMenu() }>International Commitee </NavLink>
-                <NavLink className="navbarsubcomp" to='./natcommitee' onClick= { ()=> props.isMobile && props.closeMobileMenu() }>National Commitee</NavLink>
-                <NavLink className="navbarsubcomp" to='./internalcommitee' onClick= { ()=> props.isMobile && props.closeMobileMenu() }>Internal Commitee</NavLink>
+                 <NavLink className="navbarsubcomp" to='./advisory' onClick= { ()=> props.isMobile && props.closeMobileMenu() }>Advisory Committee </NavLink>
+                <NavLink className="navbarsubcomp" to='./organising' onClick= { ()=> props.isMobile && props.closeMobileMenu() }>Organising Committee</NavLink>
+
                 </div>
                                
                 </div>
