@@ -1,5 +1,7 @@
 import React from 'react';
 import './about.css';
+// import Banner from '../components/Banner';
+import BannerSmall from '../components/BannerSmall';
 
 
 import Styled from "styled-components"; 
@@ -71,8 +73,8 @@ const Card = Styled.section`
 
 const About = () => {
     return(
-       
-
+       <>
+        <BannerSmall/>
         <Card>
 
 
@@ -113,6 +115,7 @@ const About = () => {
 
          
         </Card>
+        </>
     );
 }
 

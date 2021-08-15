@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Main from './pages/main';
+import About from './pages/About';
 import AboutInsti from './pages/AboutInsti';
 import AboutDepart from './pages/AboutDepart';
 import CallforPaper from './pages/Paper';
@@ -12,6 +13,7 @@ import Navbar from './pages/Navbar';
 import InterCommitee from './pages/Commitee';
 import NatCommitee from './pages/NatCommitee';
 import IntrnalCommitee from './pages/InternlCommitee';
+import Downloads from './pages/Downloads'
 import NotFound from './pages/Notfound';
 import './pages/Footer.css'
 import FooterSection from './pages/footersection';
@@ -56,10 +58,12 @@ function App() {
           <Switch>
             <Route path="/" exact component = {Main} />
             <Route path="/aboutinstitute" exact component = {AboutInsti} />
+            <Route path="/about" exact component = {About} />
             <Route path="/aboutdepartment" exact component = {AboutDepart} />
             <Route path="/callforpaper" exact component = {CallforPaper} />
             <Route path="/paperguidelines" exact component = {PaperGuidelines} />
             <Route path="/newregistration" exact component = {NewRegistration} />
+            <Route path="/downloads" exact component = {Downloads} />
             <Route path="/userlogin" exact component = {UserLogin} />
             <Route path="/sponsorship" exact component = {Sponsorship} />
             <Route path="/intercommitee" exact component = {InterCommitee} />

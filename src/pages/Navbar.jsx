@@ -3,7 +3,7 @@ import React from 'react'
 import Styled from 'styled-components';
 import Navigation from '../components/Navbar/Navigation';
 import NavigationMobile from '../components/Navbar/NavigationMobile';
-
+import colors from "../assets/colors";
 //import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 
 
@@ -13,7 +13,7 @@ const Header = Styled.header`
     width: 100vw;
     display: flex; 
     justify-content: center;
-    background-color: #222831;
+    background-color: ${colors.primary};
     height: fit-content; 
     overflow: hidden;
 
