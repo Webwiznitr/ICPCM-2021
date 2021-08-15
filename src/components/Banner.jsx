@@ -5,8 +5,6 @@ import Styled from 'styled-components';
  //import Icpcm from '../assets/icpcm_logo.png'
  import ICPCM from '../assets/Icpcm_logo.png'; 
  //import BG_banner from "../assets/backgorund_landing_page_with_wave.png"; 
-import Slider from "infinite-react-carousel"; 
-import './glimpses.scss'; 
  import Colors from '../assets/colors'
 
 const BannerContainer = Styled.div`
@@ -110,8 +108,6 @@ margin: 10px;
 `; 
 
 
-
-
 function Banner() {
     return (
         <BannerContainer>
@@ -126,24 +122,15 @@ function Banner() {
             </BannerLogoContainer>
 
         <BannerTextImage>
-            <div className = "banner_image_holder">
-        {/* <img className="banner_image" src='https://res.cloudinary.com/manjeetdhayal/image/upload/v1628793101/redsea/icpcm_sand_logo_white_purple_bg_pqardf.png' alt= "" /> */}
-        <div className = "banner_image_container">
-        <Slider className="banner_image" arrows = {false} autoplay = {true} >
-            <img className = "banner_slider" src = 'https://res.cloudinary.com/manjeetdhayal/image/upload/v1629058499/redsea/image_1.jpg' alt= '' />
-            <img className = "banner_slider" src = 'https://res.cloudinary.com/manjeetdhayal/image/upload/v1629058596/redsea/Image_2.jpg' alt = ''/>
-            <img  className = "banner_slider" src = 'https://res.cloudinary.com/manjeetdhayal/image/upload/v1629058602/redsea/Image_3.jpg' alt = ''/>
-        </Slider>
-        </div>
-        </div>
-         
+        <img className="banner_image" src='https://res.cloudinary.com/manjeetdhayal/image/upload/v1628793101/redsea/icpcm_sand_logo_white_purple_bg_pqardf.png' alt= "" />
+      
             <TextBox>
                 <div className="banner_text_container">
-                    <HeadH1 className="International_conference">3<sup>rd</sup> International Conference on</HeadH1>
+                    <HeadH1 className="International_conference">3rd International Conference on</HeadH1>
                     <HeadingMain className="ProAndCha"> PROCESSING AND CHARACTERIZATION OF MATERIALS</HeadingMain>
                     <HeadH1 className="International_conference">(ICPCM-2021)</HeadH1>
 
-                    <h3 className="Banner_date">7<sup>th</sup>-8<sup>th</sup> December 2021</h3>
+                    <h3 className="Banner_date">7th-8th December 2021</h3>
                     </div>
             </TextBox>
             {/* <ImageBox/> */}
