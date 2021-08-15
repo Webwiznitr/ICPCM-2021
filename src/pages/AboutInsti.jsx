@@ -1,6 +1,6 @@
 import React from 'react';
 
-
+import Colors from '../assets/colors';
 import Styled from "styled-components"; 
 import BannerSmall from "../components/BannerSmall"
 
@@ -36,13 +36,13 @@ const AboutInsti = () => {
         <>
        <BannerSmall/>
             <Departcontainer  style = { { 
-              backgroundColor: "#CACDE5"
+              backgroundColor: Colors.classic
             }}>
             <Departcard>
-        <h1 className = "about_the_institute_department" style={{padding:'15px'}}>About the Institute</h1>
+        <h1 className = "about_the_institute_department" style={{color:"white" ,padding:'15px', textAlign: "justify"}}>About the Institute</h1>
         <Departcontent>
 
-          <p>
+          <p style={{color:Colors.primary}}>
           National Institute of Technology Rourkela (NIT Rourkela), formerly
             known as Regional Engineering College Rourkela (REC Rourkela) is an
             institute of higher learning for engineering and technology, funded

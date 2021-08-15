@@ -5,6 +5,7 @@ import Styled from 'styled-components';
  //import Icpcm from '../assets/icpcm_logo.png'
  import ICPCM from '../assets/Icpcm_logo.png'; 
  //import BG_banner from "../assets/backgorund_landing_page_with_wave.png"; 
+ import Colors from '../assets/colors'
 
 const BannerContainer = Styled.div`
     display:flex;
@@ -14,7 +15,7 @@ const BannerContainer = Styled.div`
     flex-direction: column; 
     margin:0 ; 
     padding: 0; 
-    background-color: #393E46; 
+    background-color: ${Colors.secondary}; 
     // background-image: url('https://res.cloudinary.com/manjeetdhayal/image/upload/v1629007237/redsea/blob-scatter-haikei_1_qstttc.png'); 
     // background-size: cover;
     // background-repeat: no-repeat;
@@ -91,7 +92,7 @@ font-weight: bold;
 `; 
 
 const HeadingMain = Styled.div`
-color: #00ADB5;
+color: ${Colors.classic};
 font-size: 3.5rem;
 font-weight: 1000;
 margin: 10px;
