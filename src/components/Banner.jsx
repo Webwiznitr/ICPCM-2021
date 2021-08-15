@@ -14,9 +14,10 @@ const BannerContainer = Styled.div`
     flex-direction: column; 
     margin:0 ; 
     padding: 0; 
-    background-image: url('https://res.cloudinary.com/manjeetdhayal/image/upload/v1628791271/redsea/background_landing_page_with_waves_vuteej.png'); 
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #393E46; 
+    // background-image: url('https://res.cloudinary.com/manjeetdhayal/image/upload/v1629007237/redsea/blob-scatter-haikei_1_qstttc.png'); 
+    // background-size: cover;
+    // background-repeat: no-repeat;
 
     @media screen and (max-width: 740px) {
         height: 750px;
@@ -90,7 +91,7 @@ font-weight: bold;
 `; 
 
 const HeadingMain = Styled.div`
-color: #2B2F50;
+color: #00ADB5;
 font-size: 3.5rem;
 font-weight: 1000;
 margin: 10px;
