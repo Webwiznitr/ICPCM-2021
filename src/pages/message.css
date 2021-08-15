@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.message{
+    width: 100%;
+    height: auto;
+    background-color: #393E46;
+    justify-content: space-around;
+    /* position: center; */
+}
+
+.mcards{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #393E46;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.mcard{
+    width: 95%;
+    height:auto;
+    background-color: #393E46;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.mheading{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+    font-size: 2rem;
+    font-weight: 300;
+    color: whitesmoke;
+}
+
+.mbox-pic-text{
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 2rem 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+}
+.mpic{
+    /* width: 35%; */
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+.messagepic{
+    width: 240px;
+    height: 240px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 1rem;
+    
+}
+
+.mtext{
+    width: 65%;
+    padding: 2rem 2rem 2rem 2rem;
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+
+@media(max-width: 1200px){
+    .mbox-pic-text{
+        justify-content: space-around;
+        align-items: center;
+        margin: 1rem 2rem 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mtext{
+        width: 100%;
+        padding: 0;
+        font-size: 1.5rem;
+        color: whitesmoke;
+    }
+
+    .mcard{
+        width: 95%;
+        height:auto;
+        background-color: #393E46;
+        margin: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+}
+
