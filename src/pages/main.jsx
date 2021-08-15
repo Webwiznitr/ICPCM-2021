@@ -27,7 +27,7 @@ const Main = () => {
     return(
         <section> 
             <Banner/>
-            <About/>
+//             <About/>
             <Message/>
 
             {/* <Sponsors/> */}
