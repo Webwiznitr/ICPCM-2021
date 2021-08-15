@@ -2,6 +2,7 @@ import React from 'react';
 import './about.css';
 // import Banner from '../components/Banner';
 import BannerSmall from '../components/BannerSmall';
+import Colors from '../assets/colors';
 
 
 import Styled from "styled-components"; 
@@ -16,7 +17,7 @@ import Styled from "styled-components";
 
 const ContainerBox = Styled.div`
     width: 90%; 
-    background-color: #00ADB5;
+    background-color: ${Colors.classic};
     padding: 20px; 
     font-size: 1.2rem; 
     color: white;
@@ -30,7 +31,7 @@ const ContainerBox = Styled.div`
 const AboutHeading = Styled.h1`  
   
     font-size: 3rem; 
-    color: #EEEEEE; 
+    color: ${Colors.light}; 
     margin-bottom: 15px; 
     text-align: center;
 
@@ -49,7 +50,7 @@ const AboutHeading = Styled.h1`
 
 
 const Card = Styled.section`
-    background-color: #00ADB5;
+    background-color: ${Colors.classic};
 
     display: flex; 
     width: 100vw; 
@@ -80,7 +81,7 @@ const About = () => {
 
           <ContainerBox  className= " para_content" >  <AboutHeading> ABOUT THE CONFERENCE </AboutHeading>
 
-       <p  className = "about_content" style = { { color: "#222831", fontWeight: "500px"}}>
+       <p  className = "about_content" style = { { color: Colors.primary, fontWeight: "500px", textAlign: "justify"}}>
        The Department of Metallurgical and Materials Engineering, National
                      Institute of Technology Rourkela is going to organize the 3rd
                      International Conference on Processing and Characterization of
