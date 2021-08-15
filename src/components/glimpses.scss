@@ -57,7 +57,7 @@ button.carousel-arrow.block.carousel-next::before{
     display: flex;
     background-image: url('https://res.cloudinary.com/manjeetdhayal/image/upload/v1629062402/redsea/svg04icpcm_qbo1ly.png');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: round;
     padding: 10px;
 
 }
@@ -65,8 +65,8 @@ button.carousel-arrow.block.carousel-next::before{
 .banner_image_container {
     display: flex;
     padding: 20px;
-    //background-image: url('https://res.cloudinary.com/manjeetdhayal/image/upload/v1629059266/redsea/svgicpcm_o7mona.png');
-    background-repeat: no-repeat;
+    //background-image: url('https://res.cloudinary.com/manjeetdhayal/image/upload/v1629062402/redsea/svg04icpcm_qbo1ly.png');
+    background-repeat: space;
     background-size: cover;
     background-position-y: origin;
 }

@@ -12,7 +12,7 @@ import './glimpses.scss';
 const BannerContainer = Styled.div`
     display:flex;
     width: 100%;
-    height: 560px; 
+    height: 570px; 
     // background-color: red;   
     flex-direction: column; 
     margin:0 ; 
