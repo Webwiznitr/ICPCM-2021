@@ -26,7 +26,7 @@ const UserLogin = ({ handleChange }) => {
   };
   const avatarStyle = { backgroundColor: "#1bbd7e" };
   const btnstyle = { margin: "8px 0" };
-  const marginTop = { marginTop: "2%" };
+  const marginTop = { marginTop: "2%", overflowY: "hidden" };
   return (
     <>
 <BannerSmall/>

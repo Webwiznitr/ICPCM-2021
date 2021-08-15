@@ -1,4 +1,4 @@
-export default {
+const Colors = {
     //Color_1: #222831
     //Color_2: #393E46
     //Color_3: #00ADB5
@@ -8,3 +8,5 @@ export default {
     classic: "#00ADB5",
     light: "#EEEEEE"
 }
+
+export default Colors;

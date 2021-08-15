@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "infinite-react-carousel"; 
 import Styled from 'styled-components'; 
 import "../components/glimpses.scss"
-
+import Colors from "../assets/colors";
 
 
 // import { GlimpseImages } from "../components/glimpseImages";
@@ -12,7 +12,7 @@ const GlimpseContainerMain = Styled.div`
     marign: 0 20px; 
     display: flex; 
     flex-direction: column;
-    background-color: #949ACB;
+    background-color: ${Colors.classic};
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -48,7 +48,7 @@ const NameGlimpseSection = Styled.div`
 function Glimpse() {
     return (<GlimpseContainerMain>
 
-<NameGlimpseSection> Glimpse of our conference </NameGlimpseSection>
+<NameGlimpseSection style={{color:Colors.primary}}> Glimpse of our conference </NameGlimpseSection>
         
         <GlimpseContainer>
 

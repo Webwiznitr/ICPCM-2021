@@ -1,14 +1,14 @@
 import React from 'react'; 
 import styled from 'styled-components';
-import Spedata from './SpeakerData';
 import "../components/glimpses.scss"
+import Orgdata from './OrganiserDate';
 import Colors from '../assets/colors';
-
+import BannerSmall from '../components/BannerSmall';
 
 const Section = styled.section`
  width: 100vw; 
  height: fit-content; 
- background-color: ${Colors.secondary};; 
+ background-color: ${Colors.classic};; 
  margin: 0 auto; 
  //margin-top: 300px;
  ${'' /* background-image: url('https://res.cloudinary.com/manjeetdhayal/image/upload/v1628808126/redsea/frame_bnzmmd.png'); */}
@@ -19,7 +19,7 @@ const Section = styled.section`
 
 const Cardforproject = styled.div`
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr ; 
     grid-gap: 10px; 
     width:fit-content;
     margin: auto;
@@ -56,7 +56,7 @@ const Projectcard = styled.div`
 
 const SpekName = styled.h1`
     font-size: 1.5rem; 
-    color: ${Colors.classic}; 
+    color: ${Colors.primary}; 
     font-weight: bold;
     margin-top:  5px;
     overflow-y: hidden; 
@@ -69,17 +69,19 @@ const Desc = styled.h2`
     overflow-y: hidden;
     `; 
 
-const Project = () => {
+const Organising = () => {
     return (
-        <Section> <h1 className="speakers" style={{color:Colors.light}}>Speakers</h1>
+        <Section>
+            <BannerSmall/>
+         <h1 className="speakers" style={{color:Colors.light}}>Organising Committee</h1>
             <Cardforproject>
 
-                {Spedata.map(element => {
+                {Orgdata.map(element => {
 
                     return <Projectcard >
                         <img className = "speakers_image" src = {element.imgsrc} alt=""/> 
                         <SpekName> {element.name}</SpekName>
-                        <Desc> {element.desc} </Desc>
+                        <Desc> {element.pos} </Desc>
                         </Projectcard>;
                         
 
@@ -91,4 +93,4 @@ const Project = () => {
     )
 }
 
-export default Project;
+export default Organising;
