@@ -51,24 +51,6 @@ button.carousel-arrow.block.carousel-next::before{
 .banner_image{
     width: 400px;
     background: transparent;
-    margin: auto;
-}
-.banner_image_holder {
-    display: flex;
-    background-image: url('https://res.cloudinary.com/manjeetdhayal/image/upload/v1629062402/redsea/svg04icpcm_qbo1ly.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 10px;
-
-}
-
-.banner_image_container {
-    display: flex;
-    padding: 20px;
-    //background-image: url('https://res.cloudinary.com/manjeetdhayal/image/upload/v1629059266/redsea/svgicpcm_o7mona.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: origin;
 }
 
 .banner_text_container {
