@@ -22,6 +22,7 @@ const NavLinks = (props) => {
                 <a href = "#about" className = "dropbtn">  About  </a>
 
                 <div className= "dropdown-content">
+                 <NavLink className="navbarsubcomp" to='./about' onClick= { ()=> props.isMobile && props.closeMobileMenu()}> Conference </NavLink>
                  <NavLink className="navbarsubcomp" to='./aboutinstitute' onClick= { ()=> props.isMobile && props.closeMobileMenu()}> Institute </NavLink>
                 <NavLink className="navbarsubcomp" to='./aboutdepartment' onClick= { ()=> props.isMobile && props.closeMobileMenu() }> Department</NavLink>
                 </div>
@@ -66,7 +67,7 @@ const NavLinks = (props) => {
                                
                 </div>
 
-                <a href="#downloads" className='navbar' onClick= { ()=> props.isMobile && props.closeMobileMenu() }>Downloads</a>
+                <NavLink to='./downloads' className='navbar' onClick= { ()=> props.isMobile && props.closeMobileMenu() }>Downloads</NavLink>
                 <a href="#contact" className='navbar' onClick= { ()=> props.isMobile && props.closeMobileMenu() }>Contact</a>
 
 
