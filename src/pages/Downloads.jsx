@@ -1,9 +1,9 @@
 import React from 'react'
-
+import BannerSmall from '../components/BannerSmall';
 const Downloads = () => {
     return (
         <>
-            Downloads
+            <BannerSmall/>
         </>
     );
 }
