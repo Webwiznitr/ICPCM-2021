@@ -13,7 +13,7 @@ const Header = Styled.header`
     width: 100vw;
     display: flex; 
     justify-content: center;
-    background-color: #949ACB;
+    background-color: #222831;
     height: fit-content; 
     overflow: hidden;
 

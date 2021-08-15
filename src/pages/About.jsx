@@ -14,7 +14,7 @@ import Styled from "styled-components";
 
 const ContainerBox = Styled.div`
     width: 90%; 
-    background-color: #CACDE5;
+    background-color: #00ADB5;
     padding: 20px; 
     font-size: 1.2rem; 
     color: white;
@@ -28,7 +28,7 @@ const ContainerBox = Styled.div`
 const AboutHeading = Styled.h1`  
   
     font-size: 3rem; 
-    color: #505896; 
+    color: #EEEEEE; 
     margin-bottom: 15px; 
     text-align: center;
 
@@ -47,7 +47,7 @@ const AboutHeading = Styled.h1`
 
 
 const Card = Styled.section`
-    background-color: #CACDE5;
+    background-color: #00ADB5;
 
     display: flex; 
     width: 100vw; 
@@ -78,7 +78,7 @@ const About = () => {
 
           <ContainerBox  className= " para_content" >  <AboutHeading> ABOUT THE CONFERENCE </AboutHeading>
 
-       <p  className = "about_content" style = { { color: "black", fontWeight: "500px"}}>
+       <p  className = "about_content" style = { { color: "#222831", fontWeight: "500px"}}>
        The Department of Metallurgical and Materials Engineering, National
                      Institute of Technology Rourkela is going to organize the 3rd
                      International Conference on Processing and Characterization of
