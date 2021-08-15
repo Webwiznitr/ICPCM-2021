@@ -2,6 +2,7 @@ import React from 'react';
 
 import About from './About'
 import Timeline from './Timeline';
+import Message from './message';
 
 
 
@@ -27,6 +28,7 @@ const Main = () => {
         <section> 
             <Banner/>
             <About/>
+            <Message/>
             {/* <Sponsors/> */}
             <Timeline/>
             <Project/>
