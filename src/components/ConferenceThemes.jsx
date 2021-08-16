@@ -1,6 +1,7 @@
 import React from 'react'; 
 import Colors from '../assets/colors';
 import styled from 'styled-components';
+import './glimpses.scss'
 
 
 const ThemeContainer = styled.div`
@@ -25,11 +26,12 @@ font-size: 1.5rem;
 color: ${Colors.light}; 
 margin-left: 10vw;
 list-style-type: square;
+list-style-position: inside;
 line-spacing: 3px;`; 
 
 const ConferenceThemes = ()=> {
     return (
-        <section style = { { backgroundColor: `${Colors.classic}`}}>
+        <section className = "conference_theme_container" style = { { backgroundColor: `${Colors.classic}`}}>
             <ThemeContainer className= "theme_container">
                 <ConferenceThemeHeading>Conference Themes</ConferenceThemeHeading>
                 <ConferenceList className="conference_theme_list">
