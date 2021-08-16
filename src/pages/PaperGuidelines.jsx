@@ -4,7 +4,7 @@ const PaperGuidelines = () => {
     return(
         <>
 <BannerSmall/>
-            Paper Submission Guidelines
+            Website under construction 
         </>
     );
 }
