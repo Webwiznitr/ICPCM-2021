@@ -7,6 +7,7 @@ import Message from './message';
 
 
 import Glimpse from './glimpses';
+import ConferenceThemes from '../components/ConferenceThemes';
 //import Downloads from './Downloads';
 import Banner from '../components/Banner';
 import Project from './SpeakersSection';
@@ -27,6 +28,7 @@ const Main = () => {
     return(
         <section> 
             <Banner/>
+            <ConferenceThemes/>
 
             <Message/>
 

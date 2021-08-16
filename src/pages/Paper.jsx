@@ -4,7 +4,7 @@ const CallforPaper = () => {
     return(
         <>
 <BannerSmall/>
-            Call for Paper
+           Website under construction
         </>
     );
 }
