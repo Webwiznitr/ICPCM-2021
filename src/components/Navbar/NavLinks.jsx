@@ -68,7 +68,7 @@ const NavLinks = (props) => {
                 </div>
 
                 <NavLink to='./downloads' className='navbar' onClick= { ()=> props.isMobile && props.closeMobileMenu() }>Downloads</NavLink>
-                <a href="#contact" className='navbar' onClick= { ()=> props.isMobile && props.closeMobileMenu() }>Contact</a>
+                <NavLink to="./contact" className='navbar' onClick= { ()=> props.isMobile && props.closeMobileMenu() }>Contact</NavLink>
 
 
 
