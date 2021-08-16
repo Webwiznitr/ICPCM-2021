@@ -71,7 +71,7 @@ const Desc = styled.h2`
 
 const Project = () => {
     return (
-        <Section> <h1 className="speakers" style={{color:Colors.light}}>Speakers</h1>
+        <Section> <h1 className="speakers" style={{color:Colors.light}}>Invited Speakers</h1>
             <Cardforproject>
 
                 {Spedata.map(element => {

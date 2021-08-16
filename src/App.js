@@ -17,6 +17,7 @@ import Downloads from './pages/Downloads'
 import NotFound from './pages/Notfound';
 import './pages/Footer.css'
 import FooterSection from './pages/footersection';
+import Contact from './pages/Contact';
 
 import Loader from './components/preloader';
 import { useState, useEffect } from "react";
@@ -68,6 +69,7 @@ function App() {
             <Route path="/sponsorship" exact component = {Sponsorship} />
             <Route path="/organising" exact component = {Organising} />
             <Route path="/advisory" exact component = {Advisory} />
+            <Route path="/contact" exact component = {Contact}/>
             <Route component = {NotFound} />
 
           </Switch>
