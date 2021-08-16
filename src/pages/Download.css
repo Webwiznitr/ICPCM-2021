@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  padding: 2vw;
+}
+
+.brochurerow1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.brochurerow2 {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+}
+
+.brochure1 {
+  background-color: rgb(0, 173, 181);
+  width: 300px;
+  height: 150px;
+  border-radius: 5%;
+
+  text-align: center;
+  align-content: center;
+}
+
+.content {
+  display: flex;
+}
+
+.fa-solid.fa-file-pdf {
+  margin-left: 3rem;
+}
+
+.brochure2 {
+  background-color: rgb(0, 173, 181);
+  width: 300px;
+  height: 150px;
+  border-radius: 5%;
+
+  text-align: center;
+  align-content: center;
+}
+
+.brochure3 {
+  background-color: rgb(0, 173, 181);
+  width: 300px;
+  height: 150px;
+  border-radius: 5%;
+
+  text-align: center;
+  align-content: center;
+}
+
+.icon {
+  width: 100%;
+  padding-top: 1rem;
+}
