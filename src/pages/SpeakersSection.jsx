@@ -2,16 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import Spedata from './SpeakerData';
 import "../components/glimpses.scss"
-
+import Colors from '../assets/colors';
 
 
 const Section = styled.section`
  width: 100vw; 
  height: fit-content; 
- //background-color: #8a4daf;; 
+ background-color: ${Colors.secondary};; 
  margin: 0 auto; 
  //margin-top: 300px;
- background-image: url('https://res.cloudinary.com/manjeetdhayal/image/upload/v1628808126/redsea/frame_bnzmmd.png');
+ ${'' /* background-image: url('https://res.cloudinary.com/manjeetdhayal/image/upload/v1628808126/redsea/frame_bnzmmd.png'); */}
  background-size: cover;
  background-repeat: no-repeat;
 
@@ -56,7 +56,7 @@ const Projectcard = styled.div`
 
 const SpekName = styled.h1`
     font-size: 1.5rem; 
-    color: black; 
+    color: ${Colors.classic}; 
     font-weight: bold;
     margin-top:  5px;
     overflow-y: hidden; 
@@ -64,14 +64,14 @@ const SpekName = styled.h1`
 
 const Desc = styled.h2`
     font-size: 1rem; 
-    color: black; 
+    color: ${Colors.light}; 
     //color: #2B2F50;
     overflow-y: hidden;
     `; 
 
 const Project = () => {
     return (
-        <Section> <h1 className="speakers">Speakers</h1>
+        <Section> <h1 className="speakers" style={{color:Colors.light}}>Invited Speakers</h1>
             <Cardforproject>
 
                 {Spedata.map(element => {

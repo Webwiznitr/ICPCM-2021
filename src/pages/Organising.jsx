@@ -1,7 +1,7 @@
 import React from 'react'; 
 import styled from 'styled-components';
 import "../components/glimpses.scss"
-
+import Orgdata from './OrganiserDate';
 import Colors from '../assets/colors';
 import BannerSmall from '../components/BannerSmall';
 
@@ -19,7 +19,7 @@ const Section = styled.section`
 
 const Cardforproject = styled.div`
     display: grid; 
-    grid-template-columns: 1fr ; 
+    grid-template-columns: 1fr 1fr ; 
     grid-gap: 10px; 
     width:fit-content;
     margin: auto;
@@ -28,7 +28,7 @@ const Cardforproject = styled.div`
 
     @media screen and (max-width: 950px)
     {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         height: fit-content;
     }
 
@@ -69,21 +69,23 @@ const Desc = styled.h2`
     overflow-y: hidden;
     `; 
 
-const Contact = () => {
+const Organising = () => {
     return (
         <Section>
             <BannerSmall/>
-         <h1 className="speakers" style={{color:Colors.light}}>Contact</h1>
+         <h1 className="speakers" style={{color:Colors.light}}>Organising Committee</h1>
             <Cardforproject>
-                <Projectcard >
-                        <img className = "speakers_image" src = "https://res.cloudinary.com/manjeetdhayal/image/upload/v1628853992/redsea/Archana_Mallick_qsyxhh.png" alt=""/> 
-                        <SpekName> Archana Mallick</SpekName>
-                        <Desc>Associate Professor
-                            Department of Metallurgical and Material Engineering 
-                            NIT Rourkela, Odisha 
-                            Phone: +91 661242558; +919439445250
-                        </Desc>
-                        </Projectcard>
+
+                {Orgdata.map(element => {
+
+                    return <Projectcard >
+                        <img className = "speakers_image" src = {element.imgsrc} alt=""/> 
+                        <SpekName> {element.name}</SpekName>
+                        <Desc> {element.pos} </Desc>
+                        </Projectcard>;
+                        
+
+                })}
             </Cardforproject>
         </Section>
 
@@ -91,4 +93,4 @@ const Contact = () => {
     )
 }
 
-export default Contact;
+export default Organising;

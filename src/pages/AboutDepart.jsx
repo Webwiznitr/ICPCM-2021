@@ -2,6 +2,7 @@ import React from 'react';
 
 import Styled from "styled-components"; 
 import BannerSmall from "../components/BannerSmall"
+import Colors from '../assets/colors';
 const Departcontainer = Styled.div`
 font-size: 2rem; 
 color: #3C4270; 
@@ -34,12 +35,12 @@ const AboutDepart = () => {
         <>
 <BannerSmall/>
             <Departcontainer style = { { 
-              backgroundColor: "#CACDE5"
+              backgroundColor: Colors.classic
             }}>
             <Departcard>
-        <h1 className = "about_the_institute_department" style={{padding:'15px'}}>About the Department</h1>
+        <h1 className = "about_the_institute_department" style={{color: "white", padding:'15px', textAlign: "justify"}}>About the Department</h1>
         <Departcontent>
-          <p>
+          <p style={{color:Colors.primary}}>
             Established in 1964, the Department has emerged as a powerhouse for
             academics, scientific research, and cutting-edge technologies. With
             time, the department grew noticeably and established new areas of

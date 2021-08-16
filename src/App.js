@@ -8,15 +8,16 @@ import CallforPaper from './pages/Paper';
 import PaperGuidelines from './pages/PaperGuidelines';
 import NewRegistration from './pages/Registration';
 import UserLogin from './pages/UserLogin';
+import Advisory from './pages/Advisory';
+import Organising from './pages/Organising';
 import Sponsorship from './pages/Sponsorship';
 import Navbar from './pages/Navbar';
-import InterCommitee from './pages/Commitee';
-import NatCommitee from './pages/NatCommitee';
-import IntrnalCommitee from './pages/InternlCommitee';
+
 import Downloads from './pages/Downloads'
 import NotFound from './pages/Notfound';
 import './pages/Footer.css'
 import FooterSection from './pages/footersection';
+import Contact from './pages/Contact';
 
 import Loader from './components/preloader';
 import { useState, useEffect } from "react";
@@ -68,9 +69,9 @@ function App() {
             <Route path="/downloads" exact component = {Downloads} />
             <Route path="/userlogin" exact component = {UserLogin} />
             <Route path="/sponsorship" exact component = {Sponsorship} />
-            <Route path="/intercommitee" exact component = {InterCommitee} />
-            <Route path="/natCommitee" exact component = {NatCommitee} />
-            <Route path="/internalcommitee" exact component = {IntrnalCommitee} />
+            <Route path="/organising" exact component = {Organising} />
+            <Route path="/advisory" exact component = {Advisory} />
+            <Route path="/contact" exact component = {Contact}/>
             <Route component = {NotFound} />
 
             

@@ -5,16 +5,18 @@ import Styled from 'styled-components';
  //import Icpcm from '../assets/icpcm_logo.png'
  import ICPCM from '../assets/Icpcm_logo.png'; 
  //import BG_banner from "../assets/backgorund_landing_page_with_wave.png"; 
+ import Colors from '../assets/colors'
+ import Slider from 'infinite-react-carousel'
 
 const BannerContainer = Styled.div`
     display:flex;
     width: 100%;
-    height: 560px; 
+    height: 650px; 
     // background-color: red;   
     flex-direction: column; 
     margin:0 ; 
     padding: 0; 
-    background-color: #393E46; 
+    background-color: ${Colors.secondary}; 
     // background-image: url('https://res.cloudinary.com/manjeetdhayal/image/upload/v1629007237/redsea/blob-scatter-haikei_1_qstttc.png'); 
     // background-size: cover;
     // background-repeat: no-repeat;
@@ -23,7 +25,7 @@ const BannerContainer = Styled.div`
         height: 750px;
     }
     @media screen and (max-width: 740px) {
-        height: 780px;
+        height: 800px;
     }
     
     `;
@@ -91,7 +93,7 @@ font-weight: bold;
 `; 
 
 const HeadingMain = Styled.div`
-color: #00ADB5;
+color: ${Colors.classic};
 font-size: 3.5rem;
 font-weight: 1000;
 margin: 10px;
@@ -121,17 +123,28 @@ function Banner() {
             </BannerLogoContainer>
 
         <BannerTextImage>
-        <img className="banner_image" src='https://res.cloudinary.com/manjeetdhayal/image/upload/v1628793101/redsea/icpcm_sand_logo_white_purple_bg_pqardf.png' alt= "" />
-      
-            <TextBox>
-                <div className="banner_text_container">
-                    <HeadH1 className="International_conference">3rd International Conference on</HeadH1>
-                    <HeadingMain className="ProAndCha"> PROCESSING AND CHARACTERIZATION OF MATERIALS</HeadingMain>
-                    <HeadH1 className="International_conference">(ICPCM-2021)</HeadH1>
+<div className = "banner_image_holder">
+{/* <img className="banner_image" src='https://res.cloudinary.com/manjeetdhayal/image/upload/v1628793101/redsea/icpcm_sand_logo_white_purple_bg_pqardf.png' alt= "" /> */}
+<div className = "banner_image_container">
+<Slider className="banner_image" arrows = {false} autoplay = {true} >
+<img className = "banner_slider" src = 'https://res.cloudinary.com/manjeetdhayal/image/upload/v1629058499/redsea/image_1.jpg' alt= '' />
+<img className = "banner_slider" src = 'https://res.cloudinary.com/manjeetdhayal/image/upload/v1629058596/redsea/Image_2.jpg' alt = ''/>
+<img  className = "banner_slider" src = 'https://res.cloudinary.com/manjeetdhayal/image/upload/v1629058602/redsea/Image_3.jpg' alt = ''/>
+</Slider>
+</div>
+</div>
 
-                    <h3 className="Banner_date">7th-8th December 2021</h3>
-                    </div>
-            </TextBox>
+<TextBox>
+    <div className="banner_text_container">
+       
+        <HeadH1 className="International_conference">3<sup>rd</sup> International Conference on</HeadH1>
+        <HeadingMain className="ProAndCha"> PROCESSING AND CHARACTERIZATION OF MATERIALS</HeadingMain>
+        <HeadH1 className="International_conference">(ICPCM-2021)</HeadH1>
+
+        
+        <h3 className="Banner_date">7<sup>th</sup>-8<sup>th</sup> December 2021</h3>
+        </div>
+</TextBox>
             {/* <ImageBox/> */}
             
               </BannerTextImage>

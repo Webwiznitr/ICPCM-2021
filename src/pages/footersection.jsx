@@ -1,14 +1,14 @@
 
 import React from 'react'; 
 import Styled from 'styled-components'
-
+import Colors from '../assets/colors';
 
 const FooterContainer = Styled.div`
     display: flex; 
     justify-content: space-evenly;
     width: 100vw; 
     padding: 2vw;
-
+    color:white;
     @media screen and (max-width: 700px) {
         flex-direction: column;
         justify-content: center; 
@@ -23,10 +23,11 @@ const InfoFooter = Styled.div`
     text-align: center;
     align:content: center;
     justify-content: center;
-    width: 200px; 
-    height: 150px;
+    width: 250px; 
+    height: 200px;
+    font-size: 20px;
     padding: 10px;
-    background-color: #cacde5;
+    background-color: ${Colors.secondary};
     border-radius: 5%;
     box-shadow: 5px 5px 0 0 gray;
 
@@ -39,7 +40,7 @@ const InfoFooter = Styled.div`
 
 function FooterSection() {
     return (
-        <section>
+        <section style={{backgroundColor:Colors.light}}>
         <FooterContainer>
             <InfoFooter>
             <p className="markicon_footer">📌</p>
@@ -61,14 +62,14 @@ function FooterSection() {
             <InfoFooter>
             <p className="markicon_footer">📫 </p>
             <h3>Email Address</h3>
-             <a className= "mail_id" href = "mailto: icpcm2021@gmail.com">icpcm2021@gmail.com</a>
+             <a className= "mail_id" style={{color:"white"}} href = "mailto: icpcm2021@gmail.com">icpcm2021@gmail.com</a>
             </InfoFooter>
 
 
         </FooterContainer>
 
 
-        <div className="footer-bottom">
+        <div className="footer-bottom" style={{backgroundColor:Colors.primary ,color: "white"}}>
               <p className="text-xs-center">
                 ICPCM &copy;{new Date().getFullYear()} - All Rights Reserved
               </p>

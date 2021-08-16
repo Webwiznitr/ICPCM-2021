@@ -2,10 +2,12 @@ import React from 'react';
 
 // import About from './About'
 import Timeline from './Timeline';
+import Message from './message';
 
 
 
 import Glimpse from './glimpses';
+import ConferenceThemes from '../components/ConferenceThemes';
 //import Downloads from './Downloads';
 import Banner from '../components/Banner';
 import Project from './SpeakersSection';
@@ -26,7 +28,10 @@ const Main = () => {
     return(
         <section> 
             <Banner/>
-            {/* <About/> */}
+            <ConferenceThemes/>
+
+            <Message/>
+
             {/* <Sponsors/> */}
             <Timeline/>
             <Project/>
