@@ -50,10 +50,12 @@
     flex-direction: row;
 }
 .mpic{
-    /* width: 35%; */
+    width: 35%;
     align-items: center;
     justify-content: space-around;
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .messagepic{
@@ -67,10 +69,25 @@
 
 .mtext{
     width: 65%;
-    padding: 2rem 2rem 2rem 2rem;
+    padding: 2rem 2rem 0.5rem 2rem;
     font-size: 1.5rem;
     color: whitesmoke;
 }
+
+.mpic-text{
+    color: #00ADB5;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.h3{
+    font-weight: 800;
+}
+
+
+/* .mname{
+    font-weight: 400;
+} */
 
 @media(max-width: 1200px){
     .mbox-pic-text{
@@ -86,6 +103,15 @@
         padding: 0;
         font-size: 1.5rem;
         color: whitesmoke;
+    }
+
+    .mpic{
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
     }
 
     .mcard{
