@@ -20,6 +20,8 @@ import FooterSection from './pages/footersection';
 
 import Loader from './components/preloader';
 import { useState, useEffect } from "react";
+
+
 // IMPORTANT POINTS 
 
 // ADD HEADER COMPONENT IN FUNCTION APP() 
@@ -70,6 +72,11 @@ function App() {
             <Route path="/natCommitee" exact component = {NatCommitee} />
             <Route path="/internalcommitee" exact component = {IntrnalCommitee} />
             <Route component = {NotFound} />
+
+            
+
+
+
 
           </Switch>
         </main>
