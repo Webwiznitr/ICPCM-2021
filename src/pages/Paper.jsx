@@ -1,80 +1,95 @@
 import React from 'react';
 import BannerSmall from "../components/BannerSmall"
-import styled from 'styled-components';
-import Colors from '../assets/colors';
+import '../components/glimpses.scss'
 
-const Publication = styled.div`
-width: 100vw; 
-background-color: ${Colors.classic}
-color: ${Colors.light} ; 
-font-size: 1.5rem; 
-font-weight: bold; 
-padding: 2vw 10vw; 
-text-align: left; 
-`
-; 
 
-const ImageContainerPublication = styled.div`
- width: 100vw; 
- padding: 0 10vw; 
- display: flex; 
- flex-wrap: wrap;
- justify-content: center; 
- align-items: center; 
-`; 
-
-const PrevImages = [
+class CallforPaper extends React.Component {
+    constructor(props) {
+      super(props);
+      this.switchImage = this.switchImage.bind(this);
+      this.state = {
+        currentImage: 0,
+        
+   images:[
     {
-        images:"https://res.cloudinary.com/manjeetdhayal/image/upload/v1629180658/redsea/NCPCM_2011_wiihwo.png"
+      label: '2011 Conference',
+      imgPath:
+        'https://res.cloudinary.com/manjeetdhayal/image/upload/v1629180658/redsea/NCPCM_2011_wiihwo.png',
     },
     {
-        images:"https://res.cloudinary.com/manjeetdhayal/image/upload/v1629180652/redsea/NCPCM_2012_enrtd8.png"
+      label: '2012 Conference',
+      imgPath:
+        'https://res.cloudinary.com/manjeetdhayal/image/upload/v1629180652/redsea/NCPCM_2012_enrtd8.png',
     },
     {
-        images:"https://res.cloudinary.com/manjeetdhayal/image/upload/v1629180659/redsea/NCPCM_2013_lxi2ld.png"
+      label: '2013 Conference',
+      imgPath:
+        'https://res.cloudinary.com/manjeetdhayal/image/upload/v1629180659/redsea/NCPCM_2013_lxi2ld.png',
     },
     {
-        images:"https://res.cloudinary.com/manjeetdhayal/image/upload/v1629180651/redsea/NCPCM_2014_gate7a.png"
+      label: '2014 Conference',
+      imgPath:
+        'https://res.cloudinary.com/manjeetdhayal/image/upload/v1629180651/redsea/NCPCM_2014_gate7a.png',
     },
     {
-        images:"https://res.cloudinary.com/manjeetdhayal/image/upload/v1629180652/redsea/NCPCM_2015_u4jial.png"
+      label: '2015 Conference',
+      imgPath:
+        'https://res.cloudinary.com/manjeetdhayal/image/upload/v1629180652/redsea/NCPCM_2015_u4jial.png',
     },
     {
-        images:"https://res.cloudinary.com/manjeetdhayal/image/upload/v1629180649/redsea/NCPCM_2016_mouhl1.png"
+      label: '2016 Conference',
+      imgPath:
+        'https://res.cloudinary.com/manjeetdhayal/image/upload/v1629180649/redsea/NCPCM_2016_mouhl1.png',
     },
     {
-        images:"https://res.cloudinary.com/manjeetdhayal/image/upload/v1629180651/redsea/NCPCM_2017_dqylem.png"
+      label: '2017 Conference',
+      imgPath:
+        'https://res.cloudinary.com/manjeetdhayal/image/upload/v1629180651/redsea/NCPCM_2017_dqylem.png',
     },
-
-]
-
-const CallforPaper = () => {
-    return(
-        <section>
-<BannerSmall/>
-
-<Publication>
-You are invited to submit abstracts and contribute to the conference. ISBN publication will be produced for all the accepted abstracts and full papers. Our previous publication partners:
-</Publication>
-
-<ImageContainerPublication>
-    {
-        PrevImages.map(element => {
-            return <img style = { { 
-                margin: "10px", 
-            }} src = { element.images} alt= "not found"/>
-        })
+  
+  ]
+      };
     }
-
-</ImageContainerPublication>
-           
-        </section>
-    );
-}
-
-
-
-
-
+  
+    switchImage() {
+      if (this.state.currentImage < this.state.images.length - 1) {
+        this.setState({
+          currentImage: this.state.currentImage + 1
+        });
+      } else {
+        this.setState({
+          currentImage: 0
+        });
+      }
+      return this.currentImage;
+    }
+  
+    componentDidMount() {
+      setInterval(this.switchImage, 2000);
+    }
+  
+    render() {
+      return (
+         
+        <div className="prev_conferences">
+             <BannerSmall/>
+             <div style = {
+            {
+                width: "80vw",
+                paddingTop: "20px",
+                fontSize: "1.5rem",
+                fontColor: 'black',
+                fontWeight: "1000"
+            }
+             }>You are invited to submit abstracts and contribute to the conference. ISBN publication will be produced for all the accepted abstracts and full papers. Our previous publication partners:</div>
+            <h1 className="Name_of_conference" > {this.state.images[this.state.currentImage].label} </h1>
+          <img className="prev_conference_images"
+            src={this.state.images[this.state.currentImage].imgPath}
+            alt="cleaning images"
+          />
+        </div>
+      );
+    }}
+  
 
 export default CallforPaper;

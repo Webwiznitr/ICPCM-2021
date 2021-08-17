@@ -1,13 +1,13 @@
 import React from 'react'; 
 
 // import About from './About'
-import Timeline from './Timeline';
+
 import Glimpse from './glimpses';
 import ConferenceThemes from '../components/ConferenceThemes';
 //import Downloads from './Downloads';
 import Banner from '../components/Banner';
 import Project from './SpeakersSection';
-//import Rourkela from '../components/Rourkela';
+import Rourkela from '../components/Rourkela';
 
 
 //import '../components/glimpses.scss'; 
@@ -26,12 +26,12 @@ const Main = () => {
         <section> 
             <Banner/>
             <ConferenceThemes/>
-        {/* <Rourkela/> */}
+        <Rourkela/>
 
             {/* <Message/> */}
 
             {/* <Sponsors/> */}
-            <Timeline/>
+            {/* <Timeline/> */}
             <Project/>
             
             {/* <Speakers/> */}

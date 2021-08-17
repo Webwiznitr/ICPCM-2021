@@ -2,36 +2,53 @@ import React from 'react';
 import Colors from '../assets/colors';
 import styled from 'styled-components';
 import './glimpses.scss'
+import Timeline from '../pages/Timeline';
 
 
 const ThemeContainer = styled.div`
 display:flex; 
+max-width: fit-content;
 flex-direction: column;
-margin: 50px auto; 
+background-color: #FFECDA; 
+//margin: 50px auto; 
+border-radius: 5px;
+margin: 20px;
+padding: 10px;
+
+@media screen and (max-width: 900px) {
+    min-width: 70vw;
+    width: 70vw;
+}
+
+
 `; 
 const ConferenceThemeHeading = styled.h1`
-width: 100vw; 
+//width: 100vw; 
 font-color: ${Colors.primary}; 
-font-size: 3rem; 
+font-size: 1.5rem; 
 text-align: center;
 
 @media screen and (max-width: 600px) {
-    font-size: 2rem;
+    font-size: 1.35rem;
 }
 `
 ; 
 
 const ConferenceList = styled.ol`
-font-size: 1.5rem; 
-color: ${Colors.light}; 
-margin-left: 10vw;
+font-size: 1.1rem; 
+font-weight: bold;
+color: #3A4750; 
+margin-left: 1vw;
 list-style-type: square;
 list-style-position: inside;
 line-spacing: 3px;`; 
 
 const ConferenceThemes = ()=> {
     return (
-        <section className = "conference_theme_container" style = { { backgroundColor: `${Colors.classic}`}}>
+        <section className = "conference_theme_container" style = { { 
+            backgroundColor: `${Colors.classic}`, 
+            padding: "50px 0"
+        }}>
             <ThemeContainer className= "theme_container">
                 <ConferenceThemeHeading>Conference Themes</ConferenceThemeHeading>
                 <ConferenceList className="conference_theme_list">
@@ -64,7 +81,10 @@ const ConferenceThemes = ()=> {
                         Corrosion and environmental degradation
                     </li>
                 </ConferenceList>
+
             </ThemeContainer>
+
+            <Timeline/>
         </section>
     )
 }
