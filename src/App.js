@@ -21,6 +21,8 @@ import Contact from './pages/Contact';
 
 import Loader from './components/preloader';
 import { useState, useEffect } from "react";
+
+
 // IMPORTANT POINTS 
 
 // ADD HEADER COMPONENT IN FUNCTION APP() 
@@ -71,6 +73,11 @@ function App() {
             <Route path="/advisory" exact component = {Advisory} />
             <Route path="/contact" exact component = {Contact}/>
             <Route component = {NotFound} />
+
+            
+
+
+
 
           </Switch>
         </main>
