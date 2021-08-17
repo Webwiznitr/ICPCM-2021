@@ -384,3 +384,68 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
     transition: 0.5s ease-in-out;
 }
 
+//===================
+
+// downlaod section 
+
+.download_section {
+    background-color: #EDEDED;
+}
+
+.download_container {
+    background-color: #DA0037;
+    width: 70vw;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.inner_container {
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    
+    padding: 10px;
+    
+    text-align: center;
+    align-items: center;
+    //justify-content: center;
+    
+}
+
+.download_info {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0; 
+    margin-left: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.download_info a {
+    transition: 0.5s ease-in-out;
+    animation: changeBG 0.5s ;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 200;
+    background-color: #FFEEDB;
+    width: fit-content ; 
+    padding: 5px; 
+    border-radius: 3px;
+    margin-top: 10px;
+    color:#39A6A3;
+}
+
+.download_info a:hover {
+    color: #444444;
+}
+
+
+@keyframes changeBG {
+    20% {
+        background-color: #faddbc ;
+    }
+
+    40% { background-color: #FFEEDB;}
+}

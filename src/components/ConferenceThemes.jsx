@@ -5,6 +5,7 @@ import './glimpses.scss'
 import Timeline from '../pages/Timeline';
 
 
+
 const ThemeContainer = styled.div`
 display:flex; 
 max-width: fit-content;
@@ -85,6 +86,7 @@ const ConferenceThemes = ()=> {
             </ThemeContainer>
 
             <Timeline/>
+
         </section>
     )
 }

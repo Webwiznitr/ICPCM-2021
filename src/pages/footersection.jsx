@@ -70,7 +70,7 @@ function FooterSection() {
             </InfoFooter>
 
             <InfoFooter>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.645060170525!2d84.89963771543978!3d22.253541950212988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a201f72bbd561c3%3A0xab5c70e76a7b5a!2sNational%20Institute%20of%20Technology%2C%20Rourkela!5e0!3m2!1sen!2sin!4v1629228752000!5m2!1sen!2sin"  style = { { 
+            <iframe title = "myframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.645060170525!2d84.89963771543978!3d22.253541950212988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a201f72bbd561c3%3A0xab5c70e76a7b5a!2sNational%20Institute%20of%20Technology%2C%20Rourkela!5e0!3m2!1sen!2sin!4v1629228752000!5m2!1sen!2sin"  style = { { 
                     width:"600", height:"450" , border: 0 
     }
 }
