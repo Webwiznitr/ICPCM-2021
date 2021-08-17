@@ -8,7 +8,7 @@ const Downloads = () => {
   return (
     <>
       <BannerSmall />
-      <div className="container">
+      <div className="container" style={{ height: "50vh"}}>
         <div className="brochurerow1">
           <div className="brochure1">
             <h4>CONFERENCE BROCHURE</h4>
@@ -24,7 +24,9 @@ const Downloads = () => {
             </div>
             <a
               className="download"
-              href="https://drive.google.com/file/d/1ZXvODRAZi7kVVOUYiEibb9e67OVO7NfK/view"
+              href="https://drive.google.com/file/d/1ZXvODRAZi7kVVOUYiEibb9e67OVO7NfK/view" download
+              target="_blank" rel="noreferrer"
+              
             >
               <b>Download Brochure</b>
             </a>
@@ -46,7 +48,7 @@ const Downloads = () => {
             <b>Download Brochure</b>
           </div>
 
-          <div className="brochure3">
+          {/* <div className="brochure3">
             <h4>CONFERENCE BROCHURE</h4>
 
             <div className="content">
@@ -109,7 +111,7 @@ const Downloads = () => {
               </p>
             </div>
             <b>Download Brochure</b>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

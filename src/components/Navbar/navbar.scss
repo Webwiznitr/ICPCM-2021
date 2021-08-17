@@ -57,6 +57,8 @@
         
     }
 
+ 
+
     .navbarsubcomp{
         display: block;
         margin-top: 10px;
@@ -128,4 +130,19 @@
 .conference_theme_container li::marker {
     color: black;
     // font-size: large;
+}
+
+.topnav a:hover{
+    background-color:#00ADB5 ;
+    transition: 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 900px) {
+    .topnav a:hover{
+        background-color: #222831 ;
+    }
+
+    // .dropdown-content{
+    //     background-color: #222831;
+    // }
 }
