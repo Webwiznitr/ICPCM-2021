@@ -25,7 +25,7 @@ const Downloads = () => {
             <a
               className="download"
               href="https://drive.google.com/file/d/1ZXvODRAZi7kVVOUYiEibb9e67OVO7NfK/view" download
-              target="_blank"
+              target="_blank" rel="noreferrer"
               
             >
               <b>Download Brochure</b>
