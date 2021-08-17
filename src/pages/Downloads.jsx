@@ -1,5 +1,6 @@
 import React from 'react'
 import BannerSmall from '../components/BannerSmall';
+
 const Downloads = () => {
     return (
         <>
@@ -9,3 +10,5 @@ const Downloads = () => {
 }
 
 export default Downloads;
+
+

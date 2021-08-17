@@ -4,6 +4,7 @@ import "../components/glimpses.scss"
 import Orgdata from './OrganiserDate';
 import Colors from '../assets/colors';
 import BannerSmall from '../components/BannerSmall';
+import Message from './message';
 
 const Section = styled.section`
  width: 100vw; 
@@ -87,6 +88,7 @@ const Organising = () => {
 
                 })}
             </Cardforproject>
+            <Message/>
         </Section>
 
 

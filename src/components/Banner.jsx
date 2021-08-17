@@ -130,6 +130,10 @@ function Banner() {
 <img className = "banner_slider" src = 'https://res.cloudinary.com/manjeetdhayal/image/upload/v1629058499/redsea/image_1.jpg' alt= '' />
 <img className = "banner_slider" src = 'https://res.cloudinary.com/manjeetdhayal/image/upload/v1629058596/redsea/Image_2.jpg' alt = ''/>
 <img  className = "banner_slider" src = 'https://res.cloudinary.com/manjeetdhayal/image/upload/v1629058602/redsea/Image_3.jpg' alt = ''/>
+<img className = "banner_slider" src = 'https://res.cloudinary.com/manjeetdhayal/image/upload/v1629134962/redsea/gly_im6_jrgi7k.jpg' alt = ''/>
+<img className = "banner_slider" src = 'https://res.cloudinary.com/manjeetdhayal/image/upload/v1629134940/redsea/gly_im1_ul2iap.jpg' alt = ''/>
+<img className = "banner_slider" src = 'https://res.cloudinary.com/manjeetdhayal/image/upload/v1629134940/redsea/gly_im1_ul2iap.jpg' alt = 'img not found'/>
+
 </Slider>
 </div>
 </div>

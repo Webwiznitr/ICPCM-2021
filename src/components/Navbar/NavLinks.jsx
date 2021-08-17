@@ -32,7 +32,7 @@ const NavLinks = (props) => {
                 <a href="#timeLine" className='navbar' onClick= { ()=> props.isMobile && props.closeMobileMenu() }>Timeline</a>
 
                 <div className='dropdown' >
-                <a href = "#about" className = "dropbtn" onClick= { ()=> props.isMobile && props.closeMobileMenu() }>  Paper  </a>
+                <a href = "#about" className = "dropbtn" onClick= { ()=> props.isMobile && props.closeMobileMenu() }>  Publication  </a>
 
                 <div className= "dropdown-content">
                  <NavLink className="navbarsubcomp" to='./callforpaper' onClick= { ()=> props.isMobile && props.closeMobileMenu() }> Call for  paper </NavLink>
