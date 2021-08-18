@@ -10,7 +10,7 @@ const ThemeContainer = styled.div`
 display:flex; 
 max-width: fit-content;
 flex-direction: column;
-background-color: #FFECDA; 
+background-color: #57b7bf; 
 //margin: 50px auto; 
 border-radius: 5px;
 margin: 20px;

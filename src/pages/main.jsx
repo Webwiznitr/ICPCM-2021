@@ -8,7 +8,7 @@ import ConferenceThemes from '../components/ConferenceThemes';
 import Banner from '../components/Banner';
 import Project from './SpeakersSection';
 import Rourkela from '../components/Rourkela';
-
+import Message from '../components/Message';
 
 //import '../components/glimpses.scss'; 
 //import Contact from './Contact';
@@ -26,6 +26,7 @@ const Main = () => {
         <section> 
             <Banner/>
             <ConferenceThemes/>
+            <Message/>
         <Rourkela/>
 
             {/* <Message/> */}

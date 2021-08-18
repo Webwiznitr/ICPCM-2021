@@ -43,6 +43,7 @@ const Projectcard = styled.div`
   width: 300px; 
   height: 340px; 
   display: flex; 
+  background-color: #D5EEBB;
   //border: solid 2px red; 
   flex-direction: column ;
   justify-content: center; 
@@ -56,7 +57,7 @@ const Projectcard = styled.div`
 
 const SpekName = styled.h1`
     font-size: 1.5rem; 
-    color: ${Colors.primary}; 
+    color: #aa5aff; 
     font-weight: bold;
     margin-top:  5px;
     overflow-y: hidden; 
@@ -64,8 +65,8 @@ const SpekName = styled.h1`
 
 const Desc = styled.h2`
     font-size: 1rem; 
-    color: ${Colors.light}; 
-    //color: #2B2F50;
+    //color: ${Colors.light}; 
+    color: #170055;
     overflow-y: hidden;
     `; 
 
@@ -77,11 +78,15 @@ const Contact = () => {
             <Cardforproject>
                 <Projectcard >
                         <img className = "speakers_image" src = "https://res.cloudinary.com/manjeetdhayal/image/upload/v1628853992/redsea/Archana_Mallick_qsyxhh.png" alt=""/> 
-                        <SpekName> Archana Mallick</SpekName>
-                        <Desc>Associate Professor
+                        <SpekName> Archana Mallik</SpekName>
+                        <hr style = { { color: "black",
+                    height: "2px",
+                    width: "90%"
+                    }} />
+                        <Desc>Associate Professor<br/>
                             Department of Metallurgical and Material Engineering 
                             NIT Rourkela, Odisha 
-                            Phone: +91 661242558; +919439445250
+                            Phone: +91 6612462558; +91 9439445250
                         </Desc>
                         </Projectcard>
             </Cardforproject>

@@ -41,7 +41,7 @@ const Download = () => {
             <div className = "download_logo">{element.logo}</div>
             <div className = "download_info">
             <snap> {element.name}</snap>
-            <a href={element.downloadLink} download >Download</a>
+            <a href={element.downloadLink} target = "_blank" download >Download</a>
             </div>
             </div>
             </div>

@@ -7,7 +7,7 @@ const ImpDates = styled.div`
     display: flex; 
     flex-direction: column; 
     width: 350px; 
-    background-color: #FFECDA;
+    background-color: #59c5ce;
     border-radius: 5px;
     margin: 20px;
     padding: 10px;
@@ -18,7 +18,7 @@ const ImpDates = styled.div`
     `; 
 
 const Timeline = ()=> {
-   return (<ImpDates >
+   return (<ImpDates id = "timeline_section">
        <h1 className = "Important_dates" style = {
                           {
                               textAlign: 'center',
