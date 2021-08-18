@@ -2,22 +2,38 @@ const Orgdata = [
     {
         name:"Prof. Anindya Basu",
         imgsrc:"https://res.cloudinary.com/manjeetdhayal/image/upload/v1628853985/redsea/Anindya_basu_u6yxds.png",
-        pos:"Chairman"
+        pos:"Chairman",
+        desc:"Professor and Head",
+        dept:" Department of Metallurgical and Materials Engineering, NIT Rourkela, India", 
+        email: "basua@nitrkl.ac.in",
+        phone: " (+91) 661 246 2553 , 3553"
     },
     {
         name:"Prof. Archana Mallik",
         imgsrc:"https://res.cloudinary.com/manjeetdhayal/image/upload/v1628853992/redsea/Archana_Mallick_qsyxhh.png",
-        pos:"Convener"
+        pos:"Convener",
+        desc:"Associate Professor",
+        dept: "Electroplating and Corrosion researcher, NIT Rourkela, India", 
+        email: "archanam@nitrkl.ac.in",
+        phone:"  (+91) 661 246 2558 , 2558"
     },
     {
         name:"Prof. Kumud Kant Mehta",
         imgsrc:"https://res.cloudinary.com/manjeetdhayal/image/upload/v1628853984/redsea/mehta_ks5x3q.png",
-        pos:"Co-convener"
+        pos:"Co-convener",
+        desc:"Assistant Professor",
+        dept: "Department of Metallurgical and Materials Engineering, NIT Rourkela, India", 
+        email: "mehtakk@nitrkl.ac.in",
+        phone:""
     },
     {
         name:"Prof. Krishna Dutta",
         imgsrc:"https://res.cloudinary.com/manjeetdhayal/image/upload/v1628853988/redsea/Krishna_Dutta_yejhrq.png",
-        pos:"Treasurer"
+        pos:"Treasurer",
+        desc:"Assistant Professor ",
+        dept:" Department of Metallurgical and Materials Engineering, NIT Rourkela, India", 
+        email: "duttak@nitrkl.ac.in",
+        phone:"  (+91) 661 246 2568 , 3568"
     },
 ];
 
