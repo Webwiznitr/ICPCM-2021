@@ -12,7 +12,8 @@ import Styled from 'styled-components';
 const BannerContainer = Styled.div`
     display:flex;
     width: 100%;
-    height: calc(100vh - 70px); 
+    height: calc(100vh - 70px);
+    min-height: 700px; 
     // background-color: red;   
     flex-direction: column; 
     margin:0 ; 
@@ -21,12 +22,10 @@ const BannerContainer = Styled.div`
     // background-image: url('https://res.cloudinary.com/manjeetdhayal/image/upload/v1629234203/redsea/landingpage/Image_2_ybw8d9.jpg'); 
      background-size: 100% 100%;
      background-repeat: no-repeat;
+     background-attachment: fixed;
 
     @media screen and (max-width: 740px) {
-        height: 750px;
-    }
-    @media screen and (max-width: 740px) {
-        height: 800px;
+        height: calc(70vh);
     }
     
     `;
@@ -55,11 +54,14 @@ const TextBox = Styled.div`
 `;
 
 const HeadH1 = Styled.div `
-color: white;
-font-size: 3rem;
-margin: 10px;
-font-weight: bold;
-//-webkit-text-stroke: 1px black;
+    color: white;
+    font-size: 3rem;
+    margin: 10px;
+    font-weight: bold;
+    text-shadow: 0 0 3px #292727, 0 0 5px white;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #faffe578;  
+    animation: 2s slideInMain ease-in; 
 
 @media screen and (max-width: 700px) {
     font-size: 1.5rem;
@@ -69,14 +71,24 @@ font-weight: bold;
 `; 
 
 const HeadingMain = Styled.div`
-color: ${Colors.classic};
-font-size: 4rem;
-font-weight: 1000;
-margin: 10px;
+color: #071010;
+    font-size: 4rem;
+    text-shadow: 0 0 8px #ff0000, 0 0 5px #0000ff;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #f7c196;
+    font-weight: 1000;
+    margin: 10px;
+    animation: 2s slideInMain ease-in;
 
 @media screen and (max-width: 700px) {
     font-size: 2rem; 
     font-weight: bold; 
+}
+
+@keyframes slideInMain {
+  0% { opacity: 0; transform:translateY(10px);  
+  50% {opacity: 0.6}
+  100% {opacity: 1; }
 }
 
 
@@ -92,8 +104,8 @@ class Banner extends React.Component {
       this.state = {
         currentImage: 0,
         images: [
-            "https://res.cloudinary.com/manjeetdhayal/image/upload/v1629234203/redsea/landingpage/Image_2_ybw8d9.jpg",
-            "https://res.cloudinary.com/manjeetdhayal/image/upload/v1629234284/redsea/landingpage/image_1_dtwyrf.jpg",
+            "https://res.cloudinary.com/manjeetdhayal/image/upload/v1629286158/redsea/landingpage/Combined_building_yooyvm.jpg",
+            "https://res.cloudinary.com/manjeetdhayal/image/upload/v1629285867/redsea/landingpage/Department_blured_ey3py1.jpg",
           ]
       };
     }
@@ -112,7 +124,7 @@ class Banner extends React.Component {
     }
   
     componentDidMount() {
-      setInterval(this.switchImage, 2000);
+      setInterval(this.switchImage, 10000);
     }
     render() {
         return (
@@ -133,13 +145,14 @@ class Banner extends React.Component {
 
              <TextBox>
     <div className="banner_text_container">
-       
+    <h3 className="Banner_date">7<sup>th</sup>-8<sup>th</sup> December 2021</h3>
         <HeadH1 className="International_conference">3<sup>rd</sup> International Conference on</HeadH1>
-        <HeadingMain className="ProAndCha"> PROCESSING AND CHARACTERIZATION OF MATERIALS</HeadingMain>
+        
+        
+        <HeadingMain className="ProAndCha"> Processing and Characterizatoin of Materials</HeadingMain>
         <HeadH1 className="International_conference">(ICPCM-2021)</HeadH1>
 
         
-        <h3 className="Banner_date">7<sup>th</sup>-8<sup>th</sup> December 2021</h3>
         </div>
 </TextBox> 
             </BannerContainer>

@@ -52,7 +52,7 @@ class Rourkela extends React.Component {
           }
       }>
 
-          <h1 className = "rourkela_name" >Rourkela </h1>
+          <h1 className = "rourkela_name" >Rourkela: The Steel City of India</h1>
           <p className = "About_rourkela">
           Rourkela city is located in the northern part of Odisha. It is surrounded by a range of hills
 and encircled by rivers. It has one of the largest steel plants of the Steel Authority of India

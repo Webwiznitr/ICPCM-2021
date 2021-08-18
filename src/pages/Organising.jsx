@@ -4,7 +4,7 @@ import "../components/glimpses.scss"
 import Orgdata from './OrganiserDate';
 import Colors from '../assets/colors';
 import BannerSmall from '../components/BannerSmall';
-import Message from './message';
+
 
 const Section = styled.section`
  width: 100vw; 
@@ -12,7 +12,6 @@ const Section = styled.section`
  background-color: ${Colors.classic};; 
  margin: 0 auto; 
  //margin-top: 300px;
- ${'' /* background-image: url('https://res.cloudinary.com/manjeetdhayal/image/upload/v1628808126/redsea/frame_bnzmmd.png'); */}
  background-size: cover;
  background-repeat: no-repeat;
 
@@ -88,7 +87,7 @@ const Organising = () => {
 
                 })}
             </Cardforproject>
-            <Message/>
+
         </Section>
 
 

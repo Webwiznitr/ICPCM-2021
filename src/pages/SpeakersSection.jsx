@@ -20,8 +20,10 @@ const Section = styled.section`
 const Cardforproject = styled.div`
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
-    grid-gap: 10px; 
+    grid-gap: 30px; 
     width:fit-content;
+    border-top: solid 2px red;
+    
     margin: auto;
     padding-bottom:20px; 
     //border: 2px solid red;
@@ -77,7 +79,12 @@ const Project = () => {
                 {Spedata.map(element => {
 
                     return <Projectcard >
-                        <img className = "speakers_image" src = {element.imgsrc} alt=""/> 
+                        <img style = { 
+                            {
+                               border: "solid 2px yellow"
+                            }
+                        }
+                        className = "speakers_image" src = {element.imgsrc} alt=""/> 
                         <SpekName> {element.name}</SpekName>
                         <Desc> {element.desc} </Desc>
                         </Projectcard>;

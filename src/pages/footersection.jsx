@@ -59,7 +59,7 @@ function FooterSection() {
             <p className="markicon_footer">☎️</p>
             <h3>Phone Number</h3>
 
-<li>+91 661242558</li>
+<li>+91 6612462558</li>
 <li>+91 9439445250</li>
             </InfoFooter>
 

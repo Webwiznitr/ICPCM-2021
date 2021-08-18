@@ -46,6 +46,35 @@ class CallforPaper extends React.Component {
       imgPath:
         'https://res.cloudinary.com/manjeetdhayal/image/upload/v1629180651/redsea/NCPCM_2017_dqylem.png',
     },
+    {
+      label : '2018 Conference',
+      imgPath: 
+      "https://res.cloudinary.com/manjeetdhayal/image/upload/v1629314758/redsea/NCPCM_2018_uzaxol.png"
+    },
+    {
+      label : '2018 Conference',
+      imgPath: 
+      "https://res.cloudinary.com/manjeetdhayal/image/upload/v1629314798/redsea/NCPCM_2018_2_mmmz2z.png"
+    },
+    {
+      label : '2019 Conference',
+      imgPath: 
+      "https://res.cloudinary.com/manjeetdhayal/image/upload/v1629314812/redsea/NCPCM_2019_1_pwd6zm.png"
+    },
+    {
+      label : '2019 Conference',
+      imgPath: 
+      "https://res.cloudinary.com/manjeetdhayal/image/upload/v1629314818/redsea/NCPCM_2019_3_anu9mp.png"},
+    {
+      label : '2019 Conference',
+      imgPath: 
+      "https://res.cloudinary.com/manjeetdhayal/image/upload/v1629314818/redsea/NCPCM_2019_4_qni3hp.png"
+    },
+    {
+      label : '2019 Conference',
+      imgPath: 
+      "https://res.cloudinary.com/manjeetdhayal/image/upload/q_55/v1629314817/redsea/NCPCM_2019_2_oc0vtv.png"
+    },
   
   ]
       };
@@ -65,7 +94,7 @@ class CallforPaper extends React.Component {
     }
   
     componentDidMount() {
-      setInterval(this.switchImage, 2000);
+      setInterval(this.switchImage, 5000);
     }
   
     render() {
@@ -73,7 +102,7 @@ class CallforPaper extends React.Component {
          
         <div className="prev_conferences">
              <BannerSmall/>
-             <div style = {
+             <div className = "container_conference" style = {
             {
                 width: "80vw",
                 paddingTop: "20px",

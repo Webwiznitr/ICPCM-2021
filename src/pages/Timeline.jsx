@@ -7,10 +7,11 @@ const ImpDates = styled.div`
     display: flex; 
     flex-direction: column; 
     width: 350px; 
-    background-color: #FFECDA;
+    background-color: #59c5ce;
     border-radius: 5px;
     margin: 20px;
     padding: 10px;
+    border-left: solid 5px rgb(34, 32, 32);
 
     @media screen and (max-width: 900px) {
         width: 70vw;
@@ -18,13 +19,14 @@ const ImpDates = styled.div`
     `; 
 
 const Timeline = ()=> {
-   return (<ImpDates >
+   return (<ImpDates id = "timeline_section">
        <h1 className = "Important_dates" style = {
                           {
                               textAlign: 'center',
                               marginBottom: '2px'
                           }
                       }>Important Dates</h1>
+                      <hr style = { { marginBottom: "3px"} } />
      
           {TimelineData.map(element=> {
               return (
