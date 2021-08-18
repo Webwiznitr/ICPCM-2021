@@ -1,13 +1,12 @@
 import React from "react";
-import BannerSmall from "../components/BannerSmall";
 import {GoDesktopDownload} from 'react-icons/go'
 import {FaFileDownload} from 'react-icons/fa'
 import {IoMdDownload} from 'react-icons/io'
 import { Link } from "react-router-dom";
 
-const deskDown = <GoDesktopDownload size= "40px" />
-const flyDown  = <FaFileDownload size = "40px"/>
-const logoDown = <IoMdDownload size = "40px"/>
+const deskDown = <GoDesktopDownload size= "30px" />
+const flyDown  = <FaFileDownload size = "30px"/>
+const logoDown = <IoMdDownload size = "30px"/>
 
 const Down = [
    {
@@ -31,15 +30,16 @@ const Down = [
 
 const Download = () => {
   return (
-    <div className= "download_section">
-      <BannerSmall/>
+    <div className= "download_section_main">
+        <h1 style = { { textAlign: "center"}}> Downloads</h1>
+        <hr />
       {Down.map(element => {
         return (
          
-          <div className = "download_container">
-            <div className = "inner_container">
-            <div className = "download_logo">{element.logo}</div>
-            <div className = "download_info">
+          <div className = "download_container_main">
+            <div className = "inner_container_main">
+            <div className = "download_logo_main">{element.logo}</div>
+            <div className = "download_info_main">
             <snap> {element.name}</snap>
             <Link to={element.downloadLink} target = "_blank" download >Download</Link>
             </div>

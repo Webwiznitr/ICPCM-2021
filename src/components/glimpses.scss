@@ -85,12 +85,12 @@ button.carousel-arrow.block.carousel-next::before{
         -webkit-text-stroke-width: 3px;
         -webkit-text-stroke-color: #ffffff00;
 
-        animation: 2s slideIn ease-in forwards;
+        animation: 1s slideIn ease-in forwards;
     }
 
     @keyframes slideIn {
-        20% { opacity: 0.4;}
-        80% { transform: translateY(-5px)}
+        0% { opacity: 0; transform: translateY(5px); }
+        80% { opacity: 0.8; }
     }
     
 }
@@ -249,7 +249,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 
 .conference_theme_container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 @media screen and (max-width: 900px) {
@@ -266,11 +266,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
             margin: 0px auto;
             display: flex;
             flex-direction: column;
-            align-items: center; 
-            transition: 0.2s ease-in-out;
+            align-items: center;  
+}  
             
-     
-}
 
 @media screen and (max-width: 900px) {
 
@@ -283,9 +281,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
     min-width: 60vw;
     min-height: 70vh;
     margin-bottom: 50px;
-    
+    }
 
-}
 
 .Name_of_conference {
     width: 60vw; 
@@ -460,4 +457,79 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
     }
 
     40% { background-color: #FFEEDB;}
+}
+
+
+// downlaod section main
+
+.download_section_main {
+    border-left: solid 5px rgb(34, 32, 32);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #2ad8e7;
+}
+
+.download_container_main {
+    //background-color: #ebc8d1;
+    width: fit-content;
+    margin: 10px 0;
+    display: flex;
+    //justify-content: center;
+}
+
+
+.inner_container_main {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    
+    padding: 10px;
+    
+    //text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.download_info_main {
+    display: flex;
+    flex-direction: column;
+    //margin: 10px 0; 
+    margin-left: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.download_info_main a {
+    transition: 0.5s ease-in-out;
+    animation: changeBG 0.5s ;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 200;
+    background-color: #FFEEDB;
+    width: fit-content ; 
+    padding: 2px; 
+    border-radius: 3px;
+    margin-top: 10px;
+    color:#39A6A3;
+}
+
+.download_info_main a:hover {
+    color: #444444;
+}
+
+
+@keyframes changeBG {
+    20% {
+        background-color: #faddbc ;
+    }
+
+    40% { background-color: #FFEEDB;}
+}
+
+@media screen and (max-width: 900px) {
+    .download_container_main {
+        min-width: 70vw;
+    } 
 }

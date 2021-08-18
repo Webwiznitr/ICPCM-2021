@@ -12,7 +12,8 @@ import Styled from 'styled-components';
 const BannerContainer = Styled.div`
     display:flex;
     width: 100%;
-    height: calc(100vh - 70px); 
+    height: calc(100vh - 70px);
+    min-height: 700px; 
     // background-color: red;   
     flex-direction: column; 
     margin:0 ; 
@@ -53,14 +54,14 @@ const TextBox = Styled.div`
 `;
 
 const HeadH1 = Styled.div `
-    color: #3a30ca;
+    color: white;
     font-size: 3rem;
     margin: 10px;
     font-weight: bold;
-    text-shadow: 0 0 3px #292727, 0 0 5px #bbbbd2;
+    text-shadow: 0 0 3px #292727, 0 0 5px white;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #faffe578;  
-    animation: 3s slideInMain ease-in; 
+    animation: 2s slideInMain ease-in; 
 
 @media screen and (max-width: 700px) {
     font-size: 1.5rem;
@@ -77,7 +78,7 @@ color: #071010;
     -webkit-text-stroke-color: #f7c196;
     font-weight: 1000;
     margin: 10px;
-    animation: 3s slideInMain ease-in;
+    animation: 2s slideInMain ease-in;
 
 @media screen and (max-width: 700px) {
     font-size: 2rem; 
@@ -85,10 +86,9 @@ color: #071010;
 }
 
 @keyframes slideInMain {
-  20% { opacity: 0.4;
-  transform: translateX(5px)}
+  0% { opacity: 0; transform:translateY(10px);  
   50% {opacity: 0.6}
-  80% { transform: translateY(-5px)}
+  100% {opacity: 1; }
 }
 
 
@@ -145,9 +145,9 @@ class Banner extends React.Component {
 
              <TextBox>
     <div className="banner_text_container">
-       
+    <h3 className="Banner_date">7<sup>th</sup>-8<sup>th</sup> December 2021</h3>
         <HeadH1 className="International_conference">3<sup>rd</sup> International Conference on</HeadH1>
-        <h3 className="Banner_date">7<sup>th</sup>-8<sup>th</sup> December 2021</h3>
+        
         
         <HeadingMain className="ProAndCha"> Processing and Characterizatoin of Materials</HeadingMain>
         <HeadH1 className="International_conference">(ICPCM-2021)</HeadH1>

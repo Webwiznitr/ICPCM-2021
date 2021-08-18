@@ -11,6 +11,7 @@ const ImpDates = styled.div`
     border-radius: 5px;
     margin: 20px;
     padding: 10px;
+    border-left: solid 5px rgb(34, 32, 32);
 
     @media screen and (max-width: 900px) {
         width: 70vw;
@@ -25,6 +26,7 @@ const Timeline = ()=> {
                               marginBottom: '2px'
                           }
                       }>Important Dates</h1>
+                      <hr style = { { marginBottom: "3px"} } />
      
           {TimelineData.map(element=> {
               return (

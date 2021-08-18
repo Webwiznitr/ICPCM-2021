@@ -48,13 +48,13 @@ const NameGlimpseSection = Styled.div`
 function Glimpse() {
     return (<GlimpseContainerMain>
 
-<NameGlimpseSection style={{color:Colors.primary}}> Glimpse of our conference </NameGlimpseSection>
+<NameGlimpseSection style={{color:Colors.primary}}> Glimpse of our previous conference </NameGlimpseSection>
         
         <GlimpseContainer>
 
        
         
-        <Slider autoplay = {true}  adaptiveHeight = {true} slidesToShow = {3}  arrows = { false } autoplaySpeed = {1000}>
+        <Slider autoplay = {true}  adaptiveHeight = {true} slidesToShow = {3}  arrows = { false } autoplaySpeed = {3000}>
             <img src ="https://res.cloudinary.com/manjeetdhayal/image/upload/v1628861228/redsea/gli1_koterq.jpg" alt="img not found" />
             <img src ="https://res.cloudinary.com/manjeetdhayal/image/upload/v1628861225/redsea/gli3_egxlrs.jpg" alt="img not found" />
             <img src ="https://res.cloudinary.com/manjeetdhayal/image/upload/v1628861224/redsea/gli2_qvmfy6.jpg" alt="img not found" />

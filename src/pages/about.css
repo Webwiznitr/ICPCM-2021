@@ -18,12 +18,14 @@
 
 .about_content {
     font-size: 1.5rem;
+    border-top: solid 2px red ; 
+    padding-top: 10px;
         
 }
 
 @media screen and (max-width: 600px) {
     .about_content {
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-align: left;
     }
 }

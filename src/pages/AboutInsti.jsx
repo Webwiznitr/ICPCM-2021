@@ -28,6 +28,10 @@ const Departcontent = Styled.div`
   color:black;
   width: 80%;
   font-size:1.5rem;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1rem;
+  }
   `;
   // text-shadow: 1px 1px 4px #000;
 
@@ -42,7 +46,7 @@ const AboutInsti = () => {
         <h1 className = "about_the_institute_department" style={{color:"white" ,padding:'15px', textAlign: "justify"}}>About the Institute</h1>
         <Departcontent>
 
-          <p style={{color:Colors.primary}}>
+          <p style={{color:Colors.primary, borderTop: "solid 2px red", paddingTop: "10px"}}>
           National Institute of Technology Rourkela (NIT Rourkela), formerly
             known as Regional Engineering College Rourkela (REC Rourkela) is an
             institute of higher learning for engineering and technology, funded
