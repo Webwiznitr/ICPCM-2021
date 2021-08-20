@@ -11,6 +11,10 @@ const FooterContainer = Styled.div`
     width: 100vw; 
     padding: 2vw;
     color:white;
+    @media screen and (max-width: 1150px){
+        display:grid;
+        grid-template-row: 1fr 1fr;
+    }
     @media screen and (max-width: 800px) {
         flex-direction: column;
         justify-content: center; 
