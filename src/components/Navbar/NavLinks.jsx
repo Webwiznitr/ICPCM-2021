@@ -10,16 +10,15 @@ const NavLinks = (props) => {
 
         <div className="topnav">
 
-            
-              <a href="#home" className="active" onClick= { ()=> props.isMobile && props.closeMobileMenu()} >
-                <NavLink className="navbar_active" to="/" >
-                    Home
-                </NavLink> </a>
+    
+                <NavLink className="navbar" to="/" onClick= { ()=> props.isMobile && props.closeMobileMenu()}>
+                   <span>Home</span>
+                </NavLink>
 
                 
 
                 <div className='dropdown' >
-                <a href = "#about" className = "dropbtn">  About  </a>
+                <a href = "#about" className = "dropbtn"> <span>About </span>  </a>
 
                 <div className= "dropdown-content">
                  <NavLink className="navbarsubcomp" to='./about' onClick= { ()=> props.isMobile && props.closeMobileMenu()}> Conference </NavLink>
@@ -29,10 +28,10 @@ const NavLinks = (props) => {
                                
                 </div>
 
-                <a href="#timeline_section" className='navbar' onClick= { ()=> props.isMobile && props.closeMobileMenu() }>Timeline</a>
+                <a href="#timeline_section" className='navbar' onClick= { ()=> props.isMobile && props.closeMobileMenu() }> <span>Timeline</span></a>
 
                 <div className='dropdown' >
-                <a href = "#about" className = "dropbtn" onClick= { ()=> props.isMobile && props.closeMobileMenu() }>  Publication  </a>
+                <a href = "#about" className = "dropbtn" onClick= { ()=> props.isMobile && props.closeMobileMenu() }>  <span>Publication </span> </a>
 
                 <div className= "dropdown-content">
                  <NavLink className="navbarsubcomp" to='./callforpaper' onClick= { ()=> props.isMobile && props.closeMobileMenu() }> Call for  paper </NavLink>
@@ -42,7 +41,7 @@ const NavLinks = (props) => {
                 </div>
 
                 <div className='dropdown' >
-                <a href = "#about" className = "dropbtn"  onClick= { ()=> props.isMobile && props.closeMobileMenu() }> Registration  </a>
+                <a href = "#about" className = "dropbtn"  onClick= { ()=> props.isMobile && props.closeMobileMenu() }> <span>Registration </span> </a>
 
                 <div className= "dropdown-content">
                  <NavLink className="navbarsubcomp" to='./newregistration' onClick= { ()=> props.isMobile && props.closeMobileMenu() }> New Registration </NavLink>
@@ -51,13 +50,13 @@ const NavLinks = (props) => {
                                
                 </div>
 
-                <a href="#Sponsorship" className="active" >
-                <NavLink className="navbar_active" to="./sponsorship" onClick= { ()=> props.isMobile && props.closeMobileMenu() }>
-                Sponsorship 
-                </NavLink> </a>
+                
+                <NavLink className="navbar" to="./sponsorship" onClick= { ()=> props.isMobile && props.closeMobileMenu() }>
+                <span> Sponsorship </span>
+                </NavLink>
 
                 <div className='dropdown' >
-                <a href = "#about" className = "dropbtn" onClick= { ()=> props.isMobile && props.closeMobileMenu() }> Committee  </a>
+                <a href = "#about" className = "dropbtn" onClick= { ()=> props.isMobile && props.closeMobileMenu() }> <span>Committee  </span></a>
 
                 <div className= "dropdown-content">
                  <NavLink className="navbarsubcomp" to='./advisory' onClick= { ()=> props.isMobile && props.closeMobileMenu() }>Advisory Committee </NavLink>
@@ -67,8 +66,8 @@ const NavLinks = (props) => {
                                
                 </div>
 
-                <NavLink to='./downloads' className='navbar' onClick= { ()=> props.isMobile && props.closeMobileMenu() }>Downloads</NavLink>
-                <NavLink to="./contact" className='navbar' onClick= { ()=> props.isMobile && props.closeMobileMenu() }>Contact</NavLink>
+                <NavLink to='./downloads' className='navbar' onClick= { ()=> props.isMobile && props.closeMobileMenu() }><span>Downloads </span></NavLink>
+                <NavLink to="./contact" className='navbar' onClick= { ()=> props.isMobile && props.closeMobileMenu() }><span>Contact </span></NavLink>
 
 
 
@@ -76,105 +75,6 @@ const NavLinks = (props) => {
 
 
         </div>
-
-
-
-
-
-        //     <ul className="horizontal-list" 
-        //         style={
-        //             {
-        //                 padding: " 20px 10px",
-        //                 margin: "0 auto"
-
-        //             }
-        //         }
-        //         >   <NavLink className="navbarComponent" to='/'>
-        //         <li>
-        //              <a className='navbar' href="#home">
-        //              Home
-
-        //              </a>
-        //          </li>
-        //   </NavLink>
-
-        //             <li>
-        //                 <a href="#about" className='navbar'>
-        //                     About
-        //                     <DropDown className='dropdown' >
-        //                         <NavLink className="navbarsubcomp" to='./aboutinstitute'><DropDownListValue > Institute </DropDownListValue></NavLink>
-        //                         <NavLink className="navbarsubcomp" to='./aboutdepartment'><DropDownListValue> Department </DropDownListValue></NavLink>
-        //                     </DropDown>
-        //                 </a>
-        //             </li>
-        //             <li>
-        //                 <a href="#timeline" className='navbar'>Timeline</a>
-        //             </li>
-        //             <li>
-        //                 <a href="#about" className='navbar'>
-        //                     Paper
-        //                     <DropDown className='dropdown'>
-        //                         <NavLink className="navbarsubcomp" to='./callforpaper'> <DropDownListValue>Call for Paper </DropDownListValue> </NavLink>
-        //                         <NavLink className="navbarsubcomp" to='./paperguidelines'><DropDownListValue>Paper Submission Guidelines</DropDownListValue> </NavLink>
-        //                     </DropDown>
-        //                 </a>
-        //             </li>
-        //             <li>
-        //                 <a href="#registration" className='navbar'>
-        //                     Registration
-        //                     <DropDown className='dropdown'>
-        //                         <NavLink className="navbarsubcomp" to='./newregistration'> <DropDownListValue> New Registration</DropDownListValue></NavLink>
-        //                         <NavLink className="navbarsubcomp" to='./userlogin'><DropDownListValue>User Login</DropDownListValue></NavLink>
-        //                     </DropDown>
-        //                 </a>
-
-        //             </li>
-        //             <li>
-        //                 <NavLink className="navbarComponent" to='./sponsorship'> Sponsorship </NavLink>
-        //             </li>
-        //             <li>
-        //                 <a href="#commitee" className='navbar'>
-        //                     Commitee
-        //                     <DropDown className='dropdown'>
-        //                         <NavLink className="navbarsubcomp" to='./intercommitee'><DropDownListValue>International Commitee</DropDownListValue></NavLink>
-        //                         <NavLink className="navbarsubcomp" to='./natcommitee'><DropDownListValue>National Commitee</DropDownListValue></NavLink>
-        //                         <NavLink className="navbarsubcomp" to='./internalcommitee'><DropDownListValue>Internal Commitee</DropDownListValue></NavLink>
-        //                     </DropDown>
-        //                 </a>
-        //             </li>
-        //             <li>
-
-        //                 <a href="#downloads" className='navbarC'>Downloads</a>
-        //             </li>
-        //             <li>
-        //                 <a href="#contact" className='navbar'>Contact</a>
-
-        //             </li>
-        //         </ul>
-
-        // <div class="topnav" id="top-navbar">
-        //     <a href="#home" class="active">Home</a>
-        //     <a href="#news">News</a>
-        //     <a href="#contact">Contact</a>
-        //     <div class="dropdown">
-        //         <button class="dropbtn">Dropdown
-        //             <i class="fa fa-caret-down"></i>
-        //         </button>
-        //         <div class="dropdown-content">
-        //             <a href="#">Link 1</a>
-        //             <a href="#">Link 2</a>
-        //             <a href="#">Link 3</a>
-        //         </div>
-        //     </div>
-        //     <a href="#about">About</a>
-
-        // </div>
-
-    
-
-
-
-
 
     )
 }

@@ -9,7 +9,7 @@ import colors from "../assets/colors";
 
 const Header = Styled.header`
     margin: 0 ; 
-    padding: 15px; 
+    //padding: 15px; 
     width: 100vw;
     display: flex; 
     justify-content: center;
@@ -35,10 +35,12 @@ const Navbar = () => {
             {/* Home component */}
 
       <div className = "horizontal-list" 
-       style = { { marginLeft: "2vw", 
-                    padding: " 20px 10px"
+       style = { {  
+                    padding: " 30px 0px",
                     
-                    }}> 
+                    
+                    }}
+    > 
                      </div>
 
         {/* Navigation component */}
