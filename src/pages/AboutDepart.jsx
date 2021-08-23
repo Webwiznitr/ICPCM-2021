@@ -27,6 +27,9 @@ const Departcontent = Styled.div`
 color:black;
 width: 80%;
 font-size:1.5rem;
+@media screen and (max-width: 600px) {
+  font-size: 1rem; 
+}
 `;
   
   // text-shadow: 0.1px 0.1px 0.1px #000;
@@ -40,7 +43,7 @@ const AboutDepart = () => {
             <Departcard>
         <h1 className = "about_the_institute_department" style={{color: "white", padding:'15px', textAlign: "justify"}}>About the Department</h1>
         <Departcontent>
-          <p style={{color:Colors.primary}}>
+          <p style={{color:Colors.primary , borderTop: "solid 2px red", paddingTop: "10px"}}>
             Established in 1964, the Department has emerged as a powerhouse for
             academics, scientific research, and cutting-edge technologies. With
             time, the department grew noticeably and established new areas of

@@ -1,7 +1,9 @@
 *{
   overflow-x: hidden;
 /* font-family: 'Ubuntu Mono', monospace; */
-font-family: 'Poppins', sans-serif;
+/* font-family: 'Poppins', sans-serif; */
+font-family: 'Red Hat Display', sans-serif;
+scroll-behavior: smooth;
 }
 body {
   margin: 0;

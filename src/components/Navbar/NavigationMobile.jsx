@@ -10,7 +10,7 @@ const NavigationMobileHeader = Styled.div`
 
     @media screen and (max-width: 900px ) {
         display: flex; 
-        margin-right: 10%;
+        //margin-right: 10%;
     }
 `;
 

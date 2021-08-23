@@ -3,6 +3,7 @@ import Colors from '../assets/colors';
 import styled from 'styled-components';
 import './glimpses.scss'
 import Timeline from '../pages/Timeline';
+import Download from './downloadMain';
 
 
 
@@ -10,11 +11,12 @@ const ThemeContainer = styled.div`
 display:flex; 
 max-width: fit-content;
 flex-direction: column;
-background-color: #FFECDA; 
+background-color: #57b7bf; 
 //margin: 50px auto; 
 border-radius: 5px;
 margin: 20px;
 padding: 10px;
+border-left: solid 5px rgb(34, 32, 32);
 
 @media screen and (max-width: 900px) {
     min-width: 70vw;
@@ -52,6 +54,7 @@ const ConferenceThemes = ()=> {
         }}>
             <ThemeContainer className= "theme_container">
                 <ConferenceThemeHeading>Conference Themes</ConferenceThemeHeading>
+                <hr/>
                 <ConferenceList className="conference_theme_list">
                     <li>
                         Materials processing
@@ -86,6 +89,7 @@ const ConferenceThemes = ()=> {
             </ThemeContainer>
 
             <Timeline/>
+            <Download/>
 
         </section>
     )
