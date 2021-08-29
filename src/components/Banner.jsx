@@ -4,8 +4,8 @@ import Styled from 'styled-components';
  import NIT_R_Jubli from '../assets/NITR_diamondjubilee_logo.png'; 
  
  import ICPCM from '../assets/Icpcm_logo.png'; 
-  
- import Colors from '../assets/colors'
+ import BannerJPEG from '../assets/Banner.jpeg';
+ 
  
  import './glimpses.scss'
 
@@ -13,17 +13,14 @@ const BannerContainer = Styled.div`
     display:flex;
     width: 100%;
     height: calc(100vh - 70px);
-    min-height: 700px; 
-    // background-color: red;   
+    min-height: 700px;  
     flex-direction: column; 
     margin:0 ; 
     padding: 0; 
-    background-color: ${Colors.secondary}; 
-    // background-image: url('https://res.cloudinary.com/manjeetdhayal/image/upload/v1629234203/redsea/landingpage/Image_2_ybw8d9.jpg'); 
-     background-size: 100% 100%;
-     background-repeat: no-repeat;
-     background-attachment: fixed;
-
+    background-image: url(${BannerJPEG});
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
     @media screen and (max-width: 740px) {
         height: calc(70vh);
     }
@@ -42,9 +39,11 @@ const LogoContainer = Styled.div`
 `; 
 
 const TextBox = Styled.div`
-  width: 90vw; 
+  width: 100vw; 
   text-align: center;
   margin-top: 50px;
+  display: flex; 
+  justify-content: center;
 
   @media screen and (max-width: 740px) {
       width: 100vw; 
@@ -58,27 +57,25 @@ const HeadH1 = Styled.div `
     font-size: 3rem;
     margin: 10px;
     font-weight: bold;
-    text-shadow: 0 0 3px #292727, 0 0 5px white;
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: #faffe578;  
-    animation: 2s slideInMain ease-in; 
+    animation: 1.5s slideInMain ease-in; 
 
 @media screen and (max-width: 700px) {
     font-size: 1.5rem;
-    //-webkit-text-stroke: 0.7px black; 
 }
 
 `; 
 
 const HeadingMain = Styled.div`
-color: #071010;
-    font-size: 4rem;
-    text-shadow: 0 0 8px #ff0000, 0 0 5px #0000ff;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #f7c196;
+    color: red;
+    font-size: 3.5rem;
     font-weight: 1000;
     margin: 10px;
-    animation: 2s slideInMain ease-in;
+    animation: 1.5s slideInMain ease-in;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 2.3rem; 
+        font-weight: bold; 
+    }
 
 @media screen and (max-width: 700px) {
     font-size: 2rem; 
@@ -86,53 +83,18 @@ color: #071010;
 }
 
 @keyframes slideInMain {
-  0% { opacity: 0; transform:translateY(10px);  
+  0% { opacity: 0; transform:translateY(10px); }  
   50% {opacity: 0.6}
   100% {opacity: 1; }
 }
-
-
-
 
 `; 
 
 
 class Banner extends React.Component {
-    constructor(props) {
-      super(props);
-      this.switchImage = this.switchImage.bind(this);
-      this.state = {
-        currentImage: 0,
-        images: [
-            "https://res.cloudinary.com/manjeetdhayal/image/upload/v1629286158/redsea/landingpage/Combined_building_yooyvm.jpg",
-            "https://res.cloudinary.com/manjeetdhayal/image/upload/v1629285867/redsea/landingpage/Department_blured_ey3py1.jpg",
-          ]
-      };
-    }
-  
-    switchImage() {
-      if (this.state.currentImage < this.state.images.length - 1) {
-        this.setState({
-          currentImage: this.state.currentImage + 1
-        });
-      } else {
-        this.setState({
-          currentImage: 0
-        });
-      }
-      return this.currentImage;
-    }
-  
-    componentDidMount() {
-      setInterval(this.switchImage, 10000);
-    }
     render() {
         return (
-            <BannerContainer className = "banner_landing_page" style = {
-                {
-                    backgroundImage: `url('${this.state.images[this.state.currentImage]}')`
-                }
-            }>
+            <BannerContainer className = "banner_landing_page" >
                 <BannerLogoContainer>
                 <LogoContainer>
                     <img className="banner_logo" src={ICPCM} alt= "" />
@@ -155,6 +117,15 @@ class Banner extends React.Component {
         
         </div>
 </TextBox> 
+<div className = "banner_button_container">
+    <button className = "banner_button" 
+    style = {
+        {
+            margin: "0px 20px"
+        }
+    }>Registration</button>
+    <button className = "banner_button">Abstract</button>
+</div>
             </BannerContainer>
         )
     }

@@ -7,7 +7,6 @@ import AboutDepart from './pages/AboutDepart';
 import CallforPaper from './pages/Paper';
 import PaperGuidelines from './pages/PaperGuidelines';
 import NewRegistration from './pages/Registration';
-import UserLogin from './pages/UserLogin';
 import Advisory from './pages/Advisory';
 import Organising from './pages/Organising';
 import Sponsorship from './pages/Sponsorship';
@@ -67,7 +66,6 @@ function App() {
             <Route path="/paperguidelines" exact component = {PaperGuidelines} />
             <Route path="/newregistration" exact component = {NewRegistration} />
             <Route path="/downloads" exact component = {Downloads} />
-            <Route path="/userlogin" exact component = {UserLogin} />
             <Route path="/sponsorship" exact component = {Sponsorship} />
             <Route path="/organising" exact component = {Organising} />
             <Route path="/advisory" exact component = {Advisory} />

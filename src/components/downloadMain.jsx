@@ -3,6 +3,7 @@ import {GoDesktopDownload} from 'react-icons/go'
 import {FaFileDownload} from 'react-icons/fa'
 import {IoMdDownload} from 'react-icons/io'
 import { Link } from "react-router-dom";
+import './SCSS/DownloadMain.scss';
 
 const deskDown = <GoDesktopDownload size= "30px" />
 const flyDown  = <FaFileDownload size = "30px"/>
@@ -32,7 +33,13 @@ const Download = () => {
   return (
     <div className= "download_section_main">
         <h1 style = { { textAlign: "center"}}> Downloads</h1>
-        <hr />
+        <hr style = { {
+          width: "96%",
+          marginLeft: "2%"
+          
+        }
+      }
+      />
       {Down.map(element => {
         return (
          
