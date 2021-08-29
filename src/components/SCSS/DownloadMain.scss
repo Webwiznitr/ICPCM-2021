@@ -1,0 +1,74 @@
+
+// downlaod section main
+
+.download_section_main {
+    border-left: solid 5px #000000;
+    margin: 20px;
+    //padding: 10px;
+    border-radius: 5px;
+    background-color: #f1e9e5;
+}
+
+.download_container_main {
+    //background-color: #ebc8d1;
+    width: fit-content;
+    margin: 10px 0;
+    display: flex;
+    //justify-content: center;
+}
+
+
+.inner_container_main {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    
+    padding: 10px;
+    
+    //text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.download_info_main {
+    display: flex;
+    flex-direction: column;
+    //margin: 10px 0; 
+    margin-left: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.download_info_main a {
+    transition: 0.5s ease-in-out;
+    animation: changeBG 0.5s ;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 200;
+    background-color: #FFEEDB;
+    width: fit-content ; 
+    padding: 2px; 
+    border-radius: 3px;
+    margin-top: 10px;
+    color:#39A6A3;
+}
+
+.download_info_main a:hover {
+    color: #444444;
+}
+
+
+@keyframes changeBG {
+    20% {
+        background-color: #faddbc ;
+    }
+
+    40% { background-color: #FFEEDB;}
+}
+
+@media screen and (max-width: 900px) {
+    .download_container_main {
+        min-width: 70vw;
+    } 
+}

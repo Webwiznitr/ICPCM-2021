@@ -1,6 +1,10 @@
 
 import React from "react";
-import './glimpses.scss';
+import './SCSS/Rourkela.scss';
+import R_img1 from "../assets/Rourkela/R_img1.jpg";
+import R_img2 from "../assets/Rourkela/R_img2.jpg";
+import R_img3 from "../assets/Rourkela/R_img3.jpg";
+import R_img4 from "../assets/Rourkela/R_img4.jpg";
 
 
 class Rourkela extends React.Component {
@@ -9,21 +13,7 @@ class Rourkela extends React.Component {
     this.switchImage = this.switchImage.bind(this);
     this.state = {
       currentImage: 0,
-      images: [
-        "https://res.cloudinary.com/manjeetdhayal/image/upload/v1629234388/redsea/rourkela_blur/image_5_fqgmlx.jpg",
-        "https://res.cloudinary.com/manjeetdhayal/image/upload/v1629234404/redsea/rourkela_blur/Image_3_szgyfx.jpg",
-        "https://res.cloudinary.com/manjeetdhayal/image/upload/v1629234393/redsea/rourkela_blur/image_4_sqrctq.jpg",
-        "https://res.cloudinary.com/manjeetdhayal/image/upload/v1629234384/redsea/rourkela_blur/image_6_nynfbb.jpg",
-        "https://res.cloudinary.com/manjeetdhayal/image/upload/v1629234376/redsea/rourkela_blur/image_7_glksx9.jpg",
-        "https://res.cloudinary.com/manjeetdhayal/image/upload/v1629234353/redsea/rourkela_blur/image_10_uhq3fd.jpg",
-        "https://res.cloudinary.com/manjeetdhayal/image/upload/v1629234363/redsea/rourkela_blur/image_9_wzz136.jpg",
-        "https://res.cloudinary.com/manjeetdhayal/image/upload/v1629234369/redsea/rourkela_blur/image_8_mqjsr9.jpg",
-        "https://res.cloudinary.com/manjeetdhayal/image/upload/v1629234332/redsea/rourkela_blur/image_11_z4qouk.jpg",
-        "https://res.cloudinary.com/manjeetdhayal/image/upload/v1629234328/redsea/rourkela_blur/image_12_ydbhcd.jpg",
-
-
-
-    ]
+      images: [ R_img1, R_img2, R_img3, R_img4  ]
     };
   }
 
@@ -41,7 +31,7 @@ class Rourkela extends React.Component {
   }
 
   componentDidMount() {
-    setInterval(this.switchImage, 2000);
+    setInterval(this.switchImage, 5000);
   }
 
   render() {

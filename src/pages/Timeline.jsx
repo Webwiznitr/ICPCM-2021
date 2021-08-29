@@ -7,7 +7,7 @@ const ImpDates = styled.div`
     display: flex; 
     flex-direction: column; 
     width: 350px; 
-    background-color: #59c5ce;
+    background-color: #f1e9e5;
     border-radius: 5px;
     margin: 20px;
     padding: 10px;
