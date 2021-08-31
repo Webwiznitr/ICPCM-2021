@@ -55,6 +55,7 @@ const Projectcard = styled.div`
     
 
 const SpekName = styled.h1`
+    cursor: default;
     font-size: 1.5rem; 
     color: ${Colors.primary}; 
     font-weight: bold;
@@ -63,6 +64,7 @@ const SpekName = styled.h1`
 `;
 
 const Desc = styled.h2`
+    cursor: default;
     font-size: 1rem; 
     color: ${Colors.light}; 
     //color: #2B2F50;
@@ -82,6 +84,10 @@ const Organising = () => {
                         <img className = "speakers_image" src = {element.imgsrc} alt=""/> 
                         <SpekName> {element.name}</SpekName>
                         <Desc> {element.pos} </Desc>
+                        <Desc> {element.desc} </Desc>
+                        <Desc> {element.dept} </Desc>
+                        <Desc><a href="# " style={{color:Colors.light, textDecoration:"none"}}> {element.email} </a></Desc>
+                        <Desc> {element.phone} </Desc>
                         </Projectcard>;
                         
 
