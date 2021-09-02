@@ -4,7 +4,7 @@ import Styled from 'styled-components';
  import NIT_R_Jubli from '../assets/NITR_diamondjubilee_logo.png'; 
  
  import ICPCM from '../assets/Icpcm_logo.png'; 
- import BannerJPEG from '../assets/Banner.jpeg';
+ 
  
  
  import './glimpses.scss'
@@ -17,7 +17,7 @@ const BannerContainer = Styled.div`
     flex-direction: column; 
     margin:0 ; 
     padding: 0; 
-    background-image: url(${BannerJPEG});
+    background-image: url("https://res.cloudinary.com/manjeetdhayal/image/upload/v1630487494/redsea/Banner/Banner_qyjdls.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     
