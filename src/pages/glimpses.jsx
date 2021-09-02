@@ -40,6 +40,16 @@ const NameGlimpseSection = Styled.div`
         text-align: center;
         color: white;
 
+        @media screen and (max-width: 1000px) {
+            font-size: 2.5rem;
+            margin: 10px 0;
+        }
+
+        @media screen and (max-width: 600px) {
+            font-size: 1.3rem;
+            margin: 5px 0;
+        }
+
 `;
 
 

@@ -193,6 +193,18 @@ button.carousel-arrow.block.carousel-next::before{
     margin-top: 30px;
 }
 
+@media screen and (max-width: 1000px) {
+    .speakers {
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .speakers {
+        font-size: 1.5rem;
+    }
+}
+
+
 .markicon {
     margin-left: 90px;
 }

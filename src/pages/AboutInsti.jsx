@@ -43,7 +43,7 @@ const AboutInsti = () => {
               backgroundColor: Colors.classic
             }}>
             <Departcard>
-        <h1 className = "about_the_institute_department" style={{color:"white" ,padding:'15px', textAlign: "justify"}}>About the Institute</h1>
+        <h1 className = "about_the_institute_department" style={{color:"white" ,padding:'15px',}}>About the Institute</h1>
         <Departcontent>
 
           <p style={{color:Colors.primary, borderTop: "solid 2px red", paddingTop: "10px"}}>

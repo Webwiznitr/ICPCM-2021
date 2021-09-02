@@ -94,12 +94,12 @@ function FooterSection() {
             
             </div>
 
-            <BottomArea style={{backgroundColor:Colors.primary, color:Colors.light}}>
+            <BottomArea style={{backgroundColor:Colors.secondary, color:Colors.light}}>
               <p className="text-xs-center">
                 ICPCM &copy;{new Date().getFullYear()} - All Rights Reserved
               </p>
            
-                <p className="end" style= { { textAlign: "center"}}>
+                <p className="end" style= { { textAlign: "center", margin: "10px"}}>
                   Designed and Developed by Team WEBWIZ with ❤️
                 </p>
             </BottomArea>

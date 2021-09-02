@@ -1,10 +1,6 @@
 
 import React from "react";
 import './SCSS/Rourkela.scss';
-import R_img1 from "../assets/Rourkela/R_img1.jpg";
-import R_img2 from "../assets/Rourkela/R_img2.jpg";
-import R_img3 from "../assets/Rourkela/R_img3.jpg";
-import R_img4 from "../assets/Rourkela/R_img4.jpg";
 
 
 class Rourkela extends React.Component {
@@ -13,7 +9,14 @@ class Rourkela extends React.Component {
     this.switchImage = this.switchImage.bind(this);
     this.state = {
       currentImage: 0,
-      images: [ R_img1, R_img2, R_img3, R_img4  ]
+      images: [ 
+        "https://res.cloudinary.com/manjeetdhayal/image/upload/v1630487701/redsea/Rourkela/R_img1_h706qs.jpg",
+        "https://res.cloudinary.com/manjeetdhayal/image/upload/v1630487705/redsea/Rourkela/R_img2_nmisif.jpg",
+        "https://res.cloudinary.com/manjeetdhayal/image/upload/v1630487705/redsea/Rourkela/R_img3_lm4pht.jpg",
+        "https://res.cloudinary.com/manjeetdhayal/image/upload/v1630487703/redsea/Rourkela/R_img4_qvemtt.jpg",
+        
+    
+        ]
     };
   }
 
@@ -31,7 +34,7 @@ class Rourkela extends React.Component {
   }
 
   componentDidMount() {
-    setInterval(this.switchImage, 5000);
+    setInterval(this.switchImage, 7000);
   }
 
   render() {
